@@ -1,0 +1,43 @@
+.wrapper {
+  padding: 6rem 0;
+}
+
+.scrollContainer {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 1rem; /* For hover shadows if any */
+  margin: 0 -1.5rem; /* Break out of container constraints on mobile visually */
+  padding: 0 1.5rem 1rem;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  flex: 0 0 400px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1023px) {
+  .item {
+    flex: 0 0 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .item {
+    flex: 0 0 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* On desktop, remove the layout breakout hack */
+  .scrollContainer {
+    margin: 0;
+    padding: 0 0 1rem;
+  }
+}

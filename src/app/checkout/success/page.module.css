@@ -1,0 +1,132 @@
+.wrapper {
+  padding: 6rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.icon {
+  color: var(--accent-success);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-h2);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  color: var(--text-secondary);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.trackerLink {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+.trackerBox {
+  padding: 2rem;
+  flex: 1;
+}
+
+.boxTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.boxText {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.trackerCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--accent-primary);
+  color: var(--text-inverse);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: var(--text-sm);
+  transition: background-color var(--transition-duration) var(--transition-ease);
+}
+
+.trackerCta:hover {
+  background-color: var(--bg-dark);
+}
+
+.arrow {
+  transition: transform var(--transition-duration) var(--transition-ease);
+}
+
+.trackerCta:hover .arrow {
+  transform: translateX(4px);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.summaryTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.address {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.muted {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.actions {
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

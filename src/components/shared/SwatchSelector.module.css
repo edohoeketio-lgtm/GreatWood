@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-duration) var(--transition-ease);
+  position: relative;
+}
+
+/* Shapes */
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: var(--radius-base);
+}
+
+/* Active State */
+.active {
+  border-color: var(--text-primary);
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 1px solid var(--text-primary);
+  border-radius: inherit;
+}
+
+/* Sizes */
+.sm {
+  width: 16px;
+  height: 16px;
+}
+
+.md {
+  width: 24px;
+  height: 24px;
+}
+
+.lg {
+  width: 32px;
+  height: 32px;
+}
+
+.swatch:hover {
+  border-color: var(--text-secondary);
+}

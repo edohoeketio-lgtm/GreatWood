@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: transparent;
+  transition: background-color var(--transition-duration) var(--transition-ease),
+              border-bottom var(--transition-duration) var(--transition-ease);
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background-color: var(--bg-canvas);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  text-transform: uppercase; /* Or keep normal based on brand preference, let's keep normal but tracked */
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.navLink:hover {
+  color: var(--accent-primary);
+}
+
+.utils {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-ease);
+}
+
+.iconButton:hover {
+  color: var(--accent-primary);
+}
+
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: var(--accent-primary);
+  color: var(--text-inverse);
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: var(--font-sans);
+}
+
+.mobileToggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none; /* Hide desktop nav */
+  }
+  
+  .mobileToggle {
+    display: flex;
+  }
+}

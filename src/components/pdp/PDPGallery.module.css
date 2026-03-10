@@ -1,0 +1,40 @@
+.gallery {
+  position: relative;
+  width: 100%;
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  background-color: var(--bg-elevated);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .scrollContainer {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    gap: 0;
+  }
+  
+  .scrollContainer::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .imageWrapper {
+    min-width: 100vw;
+    scroll-snap-align: start;
+  }
+}

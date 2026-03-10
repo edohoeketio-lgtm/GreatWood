@@ -1,0 +1,32 @@
+.main {
+  min-height: 100vh;
+  padding-top: 140px; /* Offset for header + visual breathing room */
+  padding-bottom: 6rem;
+  background-color: var(--bg-canvas);
+}
+
+.headerLayer {
+  margin-bottom: 2rem;
+}
+
+.productGrid {
+  row-gap: 4rem !important; /* Increase vertical rhythm for image-heavy PLP */
+  column-gap: 2rem !important;
+}
+
+@media (max-width: 1023px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding-top: 100px;
+  }
+  
+  .productGrid {
+    row-gap: 3rem !important;
+    gap: 1rem !important;
+  }
+}

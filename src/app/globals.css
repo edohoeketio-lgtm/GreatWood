@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Backgrounds / Surfaces */
+  --bg-canvas: #F7F5F0;    /* Warm Alabaster - Primary page background */
+  --bg-surface: #FCFCFA;   /* Warm Off-White - Elevated cards */
+  --bg-elevated: #EFECE5;  /* Soft Oatmeal - Secondary sections */
+  --bg-dark: #1A1A1A;      /* Deep Charcoal - Dark mode/Editorial blocks */
+
+  /* Text / Typography */
+  --text-primary: #1A1A1A; /* Deep Charcoal - Maximum legibility */
+  --text-secondary: #666666;/* Muted Slate - Metadata/Fine print */
+  --text-inverse: #F7F5F0; /* Warm Alabaster - Text on dark bg */
+
+  /* Accents / Interactive */
+  --accent-primary: #8B4513;   /* Deep Terracotta - Main buttons */
+  --accent-secondary: #CDBA96; /* Muted Ochre - Hover states */
+  --accent-success: #4A5D4E;   /* Forest Green - In Stock badges */
+  --border-subtle: #E0DCD3;    /* Architectural borders */
+
+  /* Typography Scale */
+  --font-serif: 'Cormorant Garamond', 'Monument Extended', 'Ogg', serif;
+  --font-sans: 'Inter', 'Roobert', sans-serif;
+
+  --text-h1: 3.5rem; /* 56px, tracking -0.02em, line-height 1.1 */
+  --text-h2: 2.5rem; /* 40px, tracking -0.01em, line-height 1.2 */
+  --text-h3: 1.5rem; /* 24px, tracking normal, line-height 1.3 */
+  
+  --text-body-lg: 1.125rem; /* 18px, line-height 1.6 */
+  --text-body: 1rem;        /* 16px, line-height 1.6 (minimum size) */
+  --text-sm: 0.875rem;      /* 14px, line-height 1.5 */
+  --text-micro: 0.75rem;    /* 12px, tracking 0.04em uppercase */
+
+  /* Shape and Transition */
+  --radius-base: 0px;
+  --radius-soft: 2px;
+  
+  --transition-duration: 400ms;
+  --transition-ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-h1: 2.5rem;
+    --text-h2: 2rem;
+    --text-h3: 1.25rem;
+  }
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400; /* Architectural, calm weight */
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: var(--text-h1);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: 1.3;
+}
+
+p, ul, ol {
+  font-size: var(--text-body);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-ease);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

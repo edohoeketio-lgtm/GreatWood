@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--text-inverse);
+  padding: 6rem 0 2rem;
+}
+
+.logo {
+  font-size: var(--text-h2);
+  color: var(--text-inverse);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: var(--text-secondary); /* Needs to be lighter for dark mode contrast */
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+
+.brandCol {
+  grid-column: span 1;
+}
+
+@media (max-width: 1023px) {
+  .brandCol {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandCol {
+    grid-column: span 1;
+  }
+}
+
+.newsletter {
+  margin-top: 2rem;
+}
+
+.newsletterText {
+  font-size: var(--text-sm);
+  color: var(--text-inverse);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputInner :global(input) {
+  color: var(--text-inverse);
+  border-bottom-color: var(--text-secondary);
+}
+
+.inputInner :global(input):focus {
+  border-bottom-color: var(--text-inverse);
+}
+
+.colTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-inverse);
+  margin-bottom: 1.5rem;
+}
+
+.linkCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  font-size: var(--text-body);
+  color: var(--text-inverse);
+  opacity: 0.7;
+}
+
+.link:hover {
+  opacity: 1;
+  color: var(--text-inverse);
+}
+
+.bottom {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: var(--text-sm);
+  color: var(--text-inverse);
+  opacity: 0.6;
+  text-align: center;
+}

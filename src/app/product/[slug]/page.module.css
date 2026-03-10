@@ -1,0 +1,83 @@
+.main {
+  padding-top: 100px; /* Offset for Header */
+  background-color: var(--bg-canvas);
+}
+
+.topSection {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.galleryColumn {
+  flex: 1 1 55%; /* Golden ratio-ish bias to imagery */
+  min-width: 0; /* Prevents flex blowout on absolute/sticky children */
+}
+
+.buyColumn {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.buyBoxSticky {
+  position: sticky;
+  top: 120px; /* Offset below header */
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.accordions {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.conciergeBox {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--bg-elevated);
+  border-radius: var(--radius-base);
+}
+
+.conciergeText {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.conciergeBtn {
+  padding-left: 0;
+  padding-right: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.conciergeBtn:hover {
+  background-color: transparent;
+  color: var(--accent-primary);
+}
+
+.trustSection {
+  margin-top: 2rem;
+}
+
+.dimensionsSection {
+  margin-top: 4rem;
+}
+
+.relatedSection {
+  margin-top: 0; /* PairsWellWith has internal padding */
+}
+
+@media (max-width: 1023px) {
+  .topSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .buyBoxSticky {
+    position: relative;
+    top: 0;
+  }
+}

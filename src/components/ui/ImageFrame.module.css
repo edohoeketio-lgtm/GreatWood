@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-elevated); /* Acts as the LQIP background */
+}
+
+/* Aspect Ratios to prevent CLS */
+.square {
+  aspect-ratio: 1 / 1;
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+}
+
+.portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.auto {
+  aspect-ratio: auto;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden until loaded */
+  transition: opacity 600ms var(--transition-ease);
+}
+
+.loaded {
+  opacity: 1; /* Fade in once loaded */
+}

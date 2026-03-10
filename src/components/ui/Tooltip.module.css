@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+  color: var(--text-secondary);
+}
+
+.icon {
+  transition: color 200ms var(--transition-ease);
+}
+
+.wrapper:hover .icon {
+  color: var(--text-primary);
+}
+
+.popover {
+  position: absolute;
+  bottom: calc(100% + 8px); /* Pop up above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 250px;
+  background-color: var(--bg-dark);
+  color: var(--text-inverse);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-soft);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  pointer-events: none; /* Let clicks pass through if overlapping, though not strictly required */
+  animation: fadeIn 200ms var(--transition-ease);
+}
+
+/* Little triangle pointer */
+.popover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--bg-dark) transparent transparent transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 5px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* On mobile, ensure it doesn't bleed off-screen */
+@media (max-width: 767px) {
+  .popover {
+    max-width: 200px;
+    left: auto;
+    right: -10px; /* Anchor it toward the right side of the screen if clicked on mobile */
+    transform: none;
+  }
+  
+  .popover::after {
+    left: auto;
+    right: 14px; /* Align arrow with icon */
+    transform: none;
+  }
+}
