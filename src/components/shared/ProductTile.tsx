@@ -28,7 +28,7 @@ export function ProductTile({
   return (
     <div className={styles.wrapper}>
       <Link href={`/product/${slug}`} className={styles.imageLink}>
-        <div className={styles.imageWrapper}>
+        <div className={styles.imageWrapper} data-has-secondary={!!secondaryImageUrl}>
           <ImageFrame
             src={imageUrl}
             alt={title}
