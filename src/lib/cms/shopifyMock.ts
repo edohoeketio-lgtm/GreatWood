@@ -42,10 +42,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Tapered Side Table',
     price: 380000,
     availableForSale: true,
-    featuredImageUrl: '/SIde table/back-view.png',
+    featuredImageUrl: '/SIde table/main.png',
     secondaryImageUrl: '/SIde table/main.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/6', title: 'Warm Oak', availableForSale: true, price: 380000, imageUrl: '/SIde table/back-view.png', hoverImageUrl: '/SIde table/main.png' }
+      { id: 'gid://shopify/ProductVariant/6', title: 'Warm Oak', availableForSale: true, price: 380000, imageUrl: '/SIde table/main.png', hoverImageUrl: '/SIde table/main.png' }
     ]
   },
   {
