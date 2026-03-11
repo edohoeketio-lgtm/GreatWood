@@ -18,15 +18,21 @@ interface BuyBoxProps {
     badge?: string;
     swatches: Array<{ id: string; name: string; colorHex?: string; imageUrl?: string }>;
   };
+  onSwatchChange?: (swatch: { id: string; name: string; colorHex?: string; imageUrl?: string }) => void;
 }
 
-export function BuyBox({ product }: BuyBoxProps) {
+export function BuyBox({ product, onSwatchChange }: BuyBoxProps) {
   const { toggleCart } = useUI();
   const { addLineItem, status } = useCartStore();
   
   const [selectedSwatch, setSelectedSwatch] = useState(product.swatches[0]);
   const [quantity, setQuantity] = useState(1);
   const isAdding = status === 'syncing';
+
+  const handleSwatchSelect = (swatch: typeof selectedSwatch) => {
+    setSelectedSwatch(swatch);
+    if (onSwatchChange) onSwatchChange(swatch);
+  };
 
   const handleAddToCart = async () => {
     await addLineItem({
@@ -63,7 +69,7 @@ export function BuyBox({ product }: BuyBoxProps) {
           <SwatchSelector
             swatches={product.swatches}
             size="lg"
-            onSelect={setSelectedSwatch}
+            onSelect={handleSwatchSelect}
           />
         </div>
       )}

@@ -12,6 +12,7 @@ export interface ShopifyProduct {
   price: number;
   availableForSale: boolean;
   featuredImageUrl: string;
+  secondaryImageUrl?: string;
   variants: Array<{
     id: string;
     title: string;
@@ -46,25 +47,27 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
   },
   {
     id: 'gid://shopify/Product/3',
-    handle: 'alta-dining-chair',
-    title: 'Alta Dining Chair',
-    price: 185000,
+    handle: 'the-sola-chair',
+    title: 'The Sola Chair',
+    price: 320000,
     availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=600',
+    featuredImageUrl: '/yellow-chair/main.jpg',
+    secondaryImageUrl: '/yellow-chair/hover.jpg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/4', title: 'Default Title', availableForSale: true, price: 185000 }
+      { id: 'gid://shopify/ProductVariant/4', title: 'Yellow Ochre', availableForSale: true, price: 320000 },
+      { id: 'gid://shopify/ProductVariant/4b', title: 'Blue Velvet', availableForSale: true, price: 320000 }
     ]
   },
   {
     id: 'gid://shopify/Product/4',
-    handle: 'kolo-sideboard',
-    title: 'Kolo Sideboard',
-    price: 850000,
+    handle: 'the-eko-console',
+    title: 'The Eko Console',
+    price: 680000,
     availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600',
+    featuredImageUrl: '/the-eko-console/main.jpg',
+    secondaryImageUrl: '/the-eko-console/front-view.jpg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/5', title: 'Natural Teak', availableForSale: true, price: 850000 },
-      { id: 'gid://shopify/ProductVariant/6', title: 'Ebonized Oak', availableForSale: true, price: 850000 }
+      { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000 }
     ]
   },
   {

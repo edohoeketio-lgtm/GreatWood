@@ -15,10 +15,16 @@ export default async function Home() {
     title: product.title,
     price: product.price,
     imageUrl: product.featuredImageUrl,
+    secondaryImageUrl: product.secondaryImageUrl,
     badge: product.title.includes('Table') ? 'Custom Order' : undefined,
-    swatches: [
-      { id: `${product.id}-s1`, name: 'Default', colorHex: '#E5E0D8' }
-    ]
+    swatches: product.variants.map((v, i) => ({
+      id: `${product.id}-s${i}`,
+      name: v.title,
+      colorHex: v.title === 'Yellow Ochre' ? '#Edb442' 
+        : v.title === 'Blue Velvet' ? '#4A6FA5' 
+        : v.title === 'Walnut' ? '#5C4033'
+        : '#E5E0D8'
+    }))
   }));
   return (
     <main className={styles.main}>
@@ -56,6 +62,7 @@ export default async function Home() {
                   slug={product.slug}
                   price={product.price}
                   imageUrl={product.imageUrl}
+                  secondaryImageUrl={product.secondaryImageUrl}
                   swatches={product.swatches}
                   badge={product.badge}
                 />

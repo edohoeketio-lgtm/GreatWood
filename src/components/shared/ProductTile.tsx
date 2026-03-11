@@ -29,23 +29,25 @@ export function ProductTile({
     <div className={styles.wrapper}>
       <Link href={`/product/${slug}`} className={styles.imageLink}>
         <div className={styles.imageWrapper} data-has-secondary={!!secondaryImageUrl}>
+          {/* Primary image — stays in normal flow, provides height */}
           <ImageFrame
             src={imageUrl}
             alt={title}
-            aspectRatio="portrait" /* 4:5 PLP standard */
+            aspectRatio="portrait"
             width={600}
             height={750}
-            className={styles.primaryImage}
           />
+          {/* Secondary image — wrapped in an absolutely-positioned overlay */}
           {secondaryImageUrl && (
-            <ImageFrame
-              src={secondaryImageUrl}
-              alt={`${title} context`}
-              aspectRatio="portrait"
-              width={600}
-              height={750}
-              className={styles.secondaryImage}
-            />
+            <div className={styles.secondaryOverlay}>
+              <ImageFrame
+                src={secondaryImageUrl}
+                alt={`${title} hover`}
+                aspectRatio="portrait"
+                width={600}
+                height={750}
+              />
+            </div>
           )}
           {badge && (
             <div className={styles.badgeWrapper}>

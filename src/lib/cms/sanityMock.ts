@@ -15,6 +15,7 @@ export interface SanityProductContent {
   materials: string[];
   careGuide: string;
   swatches: Array<{ id: string; shopifyVariantId: string; name: string; colorHex?: string; imageUrl?: string }>;
+  variantGalleries?: Record<string, Array<{ id: string; url: string; alt: string }>>;
 }
 
 const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
@@ -47,6 +48,79 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     swatches: [
       { id: 's1', shopifyVariantId: 'gid://shopify/ProductVariant/1', name: 'Oatmeal Linen', colorHex: '#E5E0D8' },
       { id: 's2', shopifyVariantId: 'gid://shopify/ProductVariant/2', name: 'Charcoal Velvet', colorHex: '#333333' }
+    ]
+  },
+  'the-sola-chair': {
+    shopifyHandle: 'the-sola-chair',
+    title: 'The Sola Chair',
+    editorialDescription: 'A vibrant architectural statement. The Sola Chair features a bold yellow ochre finish with elegant curves and solid timber legs. Designed to bring warmth and contemporary sophistication to any room.',
+    gallery: [
+      { id: 'sola-1', url: '/yellow-chair/main.jpg', alt: 'The Sola Chair front profile' },
+      { id: 'sola-2', url: '/yellow-chair/hover.jpg', alt: 'The Sola Chair angled profile' },
+      { id: 'sola-3', url: '/yellow-chair/side-view.jpg', alt: 'The Sola Chair side profile' },
+      { id: 'sola-4', url: '/yellow-chair/back-view.jpg', alt: 'The Sola Chair back view' },
+      { id: 'sola-5', url: '/yellow-chair/legs.jpg', alt: 'The Sola Chair leg detail' },
+      { id: 'sola-6', url: '/yellow-chair/chair-material.jpg', alt: 'The Sola Chair material detail' }
+    ],
+    dimensions: [
+      { label: 'Overall Width', value: '70 cm' },
+      { label: 'Overall Depth', value: '75 cm' },
+      { label: 'Overall Height', value: '80 cm' },
+      { label: 'Seat Height', value: '45 cm' }
+    ],
+    materials: [
+      'Frame: Solid Oak',
+      'Upholstery: Premium Velvet Blend'
+    ],
+    blueprintUrl: '/yellow-chair/dimension.jpeg',
+    careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
+    swatches: [
+      { id: 'sola-s1', shopifyVariantId: 'gid://shopify/ProductVariant/4', name: 'Yellow Ochre', colorHex: '#Edb442' },
+      { id: 'sola-s2', shopifyVariantId: 'gid://shopify/ProductVariant/4b', name: 'Blue Velvet', colorHex: '#4A6FA5' }
+    ],
+    variantGalleries: {
+      'gid://shopify/ProductVariant/4': [
+        { id: 'sola-y1', url: '/yellow-chair/hover.jpg', alt: 'The Sola Chair Yellow Ochre realistic' },
+        { id: 'sola-y2', url: '/yellow-chair/main.jpg', alt: 'The Sola Chair Yellow Ochre front' },
+        { id: 'sola-y3', url: '/yellow-chair/side-view.jpg', alt: 'The Sola Chair Yellow Ochre side' },
+        { id: 'sola-y4', url: '/yellow-chair/back-view.jpg', alt: 'The Sola Chair Yellow Ochre back' },
+        { id: 'sola-y5', url: '/yellow-chair/legs.jpg', alt: 'The Sola Chair Yellow Ochre legs' },
+        { id: 'sola-y6', url: '/yellow-chair/chair-material.jpg', alt: 'The Sola Chair Yellow Ochre material' }
+      ],
+      'gid://shopify/ProductVariant/4b': [
+        { id: 'sola-b1', url: '/yellow-chair/blue/main.jpg', alt: 'The Sola Chair Blue Velvet front' },
+        { id: 'sola-b2', url: '/yellow-chair/blue/front-view.jpg', alt: 'The Sola Chair Blue Velvet angled' },
+        { id: 'sola-b3', url: '/yellow-chair/blue/side-view.jpg', alt: 'The Sola Chair Blue Velvet side' },
+        { id: 'sola-b4', url: '/yellow-chair/blue/back-view.jpg', alt: 'The Sola Chair Blue Velvet back' },
+        { id: 'sola-b5', url: '/yellow-chair/blue/upclose.jpg', alt: 'The Sola Chair Blue Velvet detail' }
+      ]
+    }
+  },
+  'the-eko-console': {
+    shopifyHandle: 'the-eko-console',
+    title: 'The Eko Console',
+    editorialDescription: 'Named after Lagos itself, The Eko Console channels the city\'s restless sophistication into a single surface. A slim, architectural profile in solid walnut with brass-finished handles and tapered legs. Designed to anchor an entryway, hallway, or living space with quiet authority.',
+    gallery: [
+      { id: 'eko-1', url: '/the-eko-console/main.jpg', alt: 'The Eko Console realistic view' },
+      { id: 'eko-2', url: '/the-eko-console/front-view.jpg', alt: 'The Eko Console front profile' },
+      { id: 'eko-3', url: '/the-eko-console/back-view.jpg', alt: 'The Eko Console back view' },
+      { id: 'eko-4', url: '/the-eko-console/handles-detail.jpg', alt: 'The Eko Console handle detail' },
+      { id: 'eko-5', url: '/the-eko-console/legs-detail.jpg', alt: 'The Eko Console leg detail' }
+    ],
+    dimensions: [
+      { label: 'Overall Width', value: '120 cm' },
+      { label: 'Overall Depth', value: '35 cm' },
+      { label: 'Overall Height', value: '85 cm' }
+    ],
+    materials: [
+      'Frame: Solid Walnut (Juglans regia)',
+      'Handles: Brass, brushed finish',
+      'Top: Walnut veneer over engineered core'
+    ],
+    blueprintUrl: '/the-eko-console/dimension.jpg',
+    careGuide: 'Dust regularly with a soft, dry cloth. For deeper cleaning, use a damp cloth and dry immediately. Avoid placing hot items directly on the surface. Apply furniture wax every 6 months to maintain the finish.',
+    swatches: [
+      { id: 'eko-s1', shopifyVariantId: 'gid://shopify/ProductVariant/5', name: 'Walnut', colorHex: '#5C4033' }
     ]
   }
 };

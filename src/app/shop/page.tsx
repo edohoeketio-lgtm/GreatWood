@@ -17,10 +17,20 @@ export default async function ShopIndex() {
     title: product.title,
     price: product.price,
     imageUrl: product.featuredImageUrl,
+    secondaryImageUrl: product.secondaryImageUrl,
     badge: product.title.includes('Table') ? 'Custom Order' : product.title.includes('Mara') ? 'In Stock' : undefined,
-    swatches: [
-      { id: `${product.id}-s1`, name: 'Default', colorHex: '#E5E0D8' } // Fallback for PLP preview
-    ]
+    swatches: product.variants.map((v, i) => ({
+      id: `${product.id}-s${i}`,
+      name: v.title,
+      colorHex: v.title === 'Yellow Ochre' ? '#Edb442' 
+        : v.title === 'Blue Velvet' ? '#4A6FA5'
+        : v.title === 'Oatmeal Linen' ? '#E5E0D8'
+        : v.title === 'Charcoal Velvet' ? '#333333'
+        : v.title === 'Natural Teak' ? '#C4A777'
+        : v.title === 'Ebonized Oak' ? '#2C2C2C'
+        : v.title === 'Walnut' ? '#5C4033'
+        : '#E5E0D8'
+    }))
   }));
   return (
     <main className={styles.main}>
@@ -46,6 +56,7 @@ export default async function ShopIndex() {
               slug={product.slug}
               price={product.price}
               imageUrl={product.imageUrl}
+              secondaryImageUrl={product.secondaryImageUrl}
               swatches={product.swatches}
               badge={product.badge}
             />

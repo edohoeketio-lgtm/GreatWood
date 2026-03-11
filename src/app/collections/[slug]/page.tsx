@@ -24,10 +24,12 @@ export default function SpaceCollectionPage({ params }: { params: { slug: string
       imageUrl: "https://images.unsplash.com/photo-1532372576444-dda954194ad0?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "The Alta Lounge Chair",
-      slug: "alta-lounge-chair",
-      price: 890000,
-      imageUrl: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80&w=800"
+      title: "The Sola Chair",
+      slug: "the-sola-chair",
+      price: 320000,
+      imageUrl: "/yellow-chair/main.jpg",
+      secondaryImageUrl: "/yellow-chair/hover.jpg",
+      badge: "New"
     },
     {
       title: "Oatmeal Linen Pouf",
@@ -87,6 +89,7 @@ export default function SpaceCollectionPage({ params }: { params: { slug: string
                   slug={product.slug}
                   price={product.price}
                   imageUrl={product.imageUrl}
+                  secondaryImageUrl={product.secondaryImageUrl}
                   badge={product.badge}
                 />
               ))}
