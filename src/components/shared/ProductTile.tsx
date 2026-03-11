@@ -37,41 +37,25 @@ export function ProductTile({
   badge,
 }: ProductTileProps) {
   const [activeImage, setActiveImage] = useState(imageUrl);
-  const [activeHover, setActiveHover] = useState(secondaryImageUrl);
 
   const handleSwatchSelect = (swatch: SwatchData) => {
     if (swatch.tileImageUrl) {
       setActiveImage(swatch.tileImageUrl);
-    }
-    if (swatch.tileHoverUrl) {
-      setActiveHover(swatch.tileHoverUrl);
-    } else {
-      setActiveHover(undefined);
     }
   };
 
   return (
     <div className={styles.wrapper}>
       <Link href={`/product/${slug}`} className={styles.imageLink}>
-        <div className={styles.imageWrapper} data-has-secondary={!!activeHover}>
+        <div className={styles.imageWrapper}>
           <ImageFrame
             src={activeImage}
             alt={title}
             aspectRatio="portrait"
             width={600}
             height={750}
+            containerClassName={styles.imageZoom}
           />
-          {activeHover && (
-            <div className={styles.secondaryOverlay}>
-              <ImageFrame
-                src={activeHover}
-                alt={`${title} hover`}
-                aspectRatio="portrait"
-                width={600}
-                height={750}
-              />
-            </div>
-          )}
           {badge && (
             <div className={styles.badgeWrapper}>
               <Badge variant={badge === 'Custom Order' ? 'warning' : 'neutral'}>
