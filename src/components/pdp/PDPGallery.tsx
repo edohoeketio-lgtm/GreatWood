@@ -25,9 +25,9 @@ export function PDPGallery({ images }: PDPGalleryProps) {
             <ImageFrame
               src={img.url}
               alt={img.alt}
-              aspectRatio="auto"
+              aspectRatio="portrait"
+              objectFit="cover"
               priority={index < 2} // Prioritize first two images for LCP
-              className={styles.image}
               width={1200}
               height={1500}
             />
