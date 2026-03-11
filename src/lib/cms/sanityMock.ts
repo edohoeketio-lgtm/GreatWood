@@ -55,8 +55,8 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Sola Chair',
     editorialDescription: 'A vibrant architectural statement. The Sola Chair features a bold yellow ochre finish with elegant curves and solid timber legs. Designed to bring warmth and contemporary sophistication to any room.',
     gallery: [
-      { id: 'sola-1', url: '/yellow-chair/Main.png', alt: 'The Sola Chair front profile' },
-      { id: 'sola-2', url: '/yellow-chair/hover.jpg', alt: 'The Sola Chair angled profile' },
+      { id: 'sola-1', url: '/yellow-chair/hover.jpg', alt: 'The Sola Chair front profile' },
+      { id: 'sola-2', url: '/yellow-chair/Main.png', alt: 'The Sola Chair angled profile' },
       { id: 'sola-3', url: '/yellow-chair/side-view.jpg', alt: 'The Sola Chair side profile' },
       { id: 'sola-4', url: '/yellow-chair/Back view.jpeg', alt: 'The Sola Chair back view' },
       { id: 'sola-5', url: '/yellow-chair/legs.jpg', alt: 'The Sola Chair leg detail' },

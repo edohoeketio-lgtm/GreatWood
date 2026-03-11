@@ -42,10 +42,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Tapered Side Table',
     price: 380000,
     availableForSale: true,
-    featuredImageUrl: '/SIde table/main opp.png',
+    featuredImageUrl: '/SIde table/back-view.png',
     secondaryImageUrl: '/SIde table/main.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/6', title: 'Warm Oak', availableForSale: true, price: 380000, imageUrl: '/SIde table/main opp.png', hoverImageUrl: '/SIde table/main.png' }
+      { id: 'gid://shopify/ProductVariant/6', title: 'Warm Oak', availableForSale: true, price: 380000, imageUrl: '/SIde table/back-view.png', hoverImageUrl: '/SIde table/main.png' }
     ]
   },
   {
@@ -54,11 +54,11 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Sola Chair',
     price: 320000,
     availableForSale: true,
-    featuredImageUrl: '/yellow-chair/Main.png',
+    featuredImageUrl: '/yellow-chair/hover.jpg',
     secondaryImageUrl: '/yellow-chair/hover.jpg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/4', title: 'Yellow Ochre', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/Main.png', hoverImageUrl: '/yellow-chair/hover.jpg' },
-      { id: 'gid://shopify/ProductVariant/4b', title: 'Blue Velvet', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/blue/Main fix.png', hoverImageUrl: '/yellow-chair/blue/main.jpg' }
+      { id: 'gid://shopify/ProductVariant/4', title: 'Yellow Ochre', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/hover.jpg', hoverImageUrl: '/yellow-chair/hover.jpg' },
+      { id: 'gid://shopify/ProductVariant/4b', title: 'Blue Velvet', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/blue/main.jpg', hoverImageUrl: '/yellow-chair/blue/main.jpg' }
     ]
   },
   {
