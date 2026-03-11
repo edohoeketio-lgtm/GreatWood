@@ -123,6 +123,34 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     swatches: [
       { id: 'eko-s1', shopifyVariantId: 'gid://shopify/ProductVariant/5', name: 'Walnut', colorHex: '#5C4033' }
     ]
+  },
+  'the-tapered-side-table': {
+    shopifyHandle: 'the-tapered-side-table',
+    title: 'The Tapered Side Table',
+    editorialDescription: 'A study in elegant geometry. The Tapered Side Table features a distinctive A-frame profile with two tiered shelves. Crafted from rich wood, it offers both display space and quiet structural beauty for your living room or study.',
+    gallery: [
+      { id: 'st-1', url: '/SIde table/main.png', alt: 'The Tapered Side Table realistic view' },
+      { id: 'st-2', url: '/SIde table/front-view.png', alt: 'The Tapered Side Table front view' },
+      { id: 'st-3', url: '/SIde table/side-view.png', alt: 'The Tapered Side Table side profile' },
+      { id: 'st-4', url: '/SIde table/back-view.png', alt: 'The Tapered Side Table back view' },
+      { id: 'st-5', url: '/SIde table/upclose.png', alt: 'The Tapered Side Table macro detail' }
+    ],
+    dimensions: [
+      { label: 'Overall Width', value: '70 cm' },
+      { label: 'Overall Depth', value: '35 cm' },
+      { label: 'Overall Height', value: '60 cm' },
+      { label: 'Distance between shelves', value: '30 cm' }
+    ],
+    materials: [
+      'Frame: Solid Oak',
+      'Shelves: Oak veneer over engineered core',
+      'Finish: Warm honey tone'
+    ],
+    blueprintUrl: '/SIde table/Dimension sketch.jpeg',
+    careGuide: 'Dust regularly with a soft, dry cloth. Wipe up spills immediately to prevent staining. Avoid harsh chemicals and direct prolonged sunlight.',
+    swatches: [
+      { id: 'st-s1', shopifyVariantId: 'gid://shopify/ProductVariant/6', name: 'Warm Oak', colorHex: '#ae734e' }
+    ]
   }
 };
 

@@ -23,6 +23,7 @@ export default async function Home() {
       colorHex: v.title === 'Yellow Ochre' ? '#Edb442' 
         : v.title === 'Blue Velvet' ? '#4A6FA5' 
         : v.title === 'Walnut' ? '#5C4033'
+        : v.title === 'Warm Oak' ? '#ae734e'
         : '#E5E0D8',
       tileImageUrl: v.imageUrl,
       tileHoverUrl: v.hoverImageUrl,

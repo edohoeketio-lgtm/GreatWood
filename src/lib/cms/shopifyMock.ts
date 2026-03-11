@@ -38,13 +38,14 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
   },
   {
     id: 'gid://shopify/Product/2',
-    handle: 'veda-coffee-table',
-    title: 'Veda Coffee Table',
-    price: 450000,
+    handle: 'the-tapered-side-table',
+    title: 'The Tapered Side Table',
+    price: 380000,
     availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&q=80&w=600',
+    featuredImageUrl: '/SIde table/main opp.png',
+    secondaryImageUrl: '/SIde table/main.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/3', title: 'Default Title', availableForSale: true, price: 450000 }
+      { id: 'gid://shopify/ProductVariant/6', title: 'Warm Oak', availableForSale: true, price: 380000, imageUrl: '/SIde table/main opp.png', hoverImageUrl: '/SIde table/main.png' }
     ]
   },
   {
