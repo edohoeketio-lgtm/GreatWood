@@ -43,7 +43,7 @@ export function Header() {
         {/* Desktop Nav */}
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.navOpen : ''}`}>
           <Link href="/shop" className={styles.navLink}>Shop</Link>
-          <Link href="/collections/spaces" className={styles.navLink}>Spaces</Link>
+          <Link href="/spaces" className={styles.navLink}>Spaces</Link>
           <Link href="/custom-orders" className={styles.navLink}>Bespoke</Link>
         </nav>
 
