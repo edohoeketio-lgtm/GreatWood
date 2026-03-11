@@ -23,7 +23,9 @@ export default async function Home() {
       colorHex: v.title === 'Yellow Ochre' ? '#Edb442' 
         : v.title === 'Blue Velvet' ? '#4A6FA5' 
         : v.title === 'Walnut' ? '#5C4033'
-        : '#E5E0D8'
+        : '#E5E0D8',
+      tileImageUrl: v.imageUrl,
+      tileHoverUrl: v.hoverImageUrl,
     }))
   }));
   return (

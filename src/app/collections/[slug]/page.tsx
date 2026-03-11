@@ -27,7 +27,7 @@ export default function SpaceCollectionPage({ params }: { params: { slug: string
       title: "The Sola Chair",
       slug: "the-sola-chair",
       price: 320000,
-      imageUrl: "/yellow-chair/main.jpg",
+      imageUrl: "/yellow-chair/Main.png",
       secondaryImageUrl: "/yellow-chair/hover.jpg",
       badge: "New"
     },

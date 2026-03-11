@@ -29,7 +29,8 @@ export default async function ShopIndex() {
         : v.title === 'Natural Teak' ? '#C4A777'
         : v.title === 'Ebonized Oak' ? '#2C2C2C'
         : v.title === 'Walnut' ? '#5C4033'
-        : '#E5E0D8'
+        : '#E5E0D8',
+      tileImageUrl: v.imageUrl,
     }))
   }));
   return (
