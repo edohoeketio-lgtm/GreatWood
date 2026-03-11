@@ -94,7 +94,199 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     variants: [
       { id: 'gid://shopify/ProductVariant/8', title: 'King', availableForSale: true, price: 1100000 }
     ]
-  }
+  },
+  {
+    id: 'gid://shopify/Product/sap-1',
+    handle: 'the-sapele-sofa',
+    title: 'The Sapele Sofa',
+    price: 1850000,
+    availableForSale: true,
+    featuredImageUrl: '/sapele-sofa/main.png',
+    secondaryImageUrl: '/sapele-sofa/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/sap-1', title: 'Almond Beige', availableForSale: true, price: 1850000, imageUrl: '/sapele-sofa/main.png', hoverImageUrl: '/sapele-sofa/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/ayo-1',
+    handle: 'the-ayo-lounge',
+    title: 'The Ayo Lounge',
+    price: 850000,
+    availableForSale: true,
+    featuredImageUrl: '/ayo-lounge/main.png',
+    secondaryImageUrl: '/ayo-lounge/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/ayo-1', title: 'Olive Green', availableForSale: true, price: 850000, imageUrl: '/ayo-lounge/main.png', hoverImageUrl: '/ayo-lounge/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/peb-1',
+    handle: 'the-pebble-table',
+    title: 'The Pebble Table',
+    price: 450000,
+    availableForSale: true,
+    featuredImageUrl: '/pebble-table/main.png',
+    secondaryImageUrl: '/pebble-table/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/peb-1', title: 'Travertine', availableForSale: true, price: 450000, imageUrl: '/pebble-table/main.png', hoverImageUrl: '/pebble-table/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/kan-1',
+    handle: 'the-kano-stool',
+    title: 'The Kano Stool',
+    price: 250000,
+    availableForSale: true,
+    featuredImageUrl: '/kano-stool/main.png',
+    secondaryImageUrl: '/kano-stool/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/kan-1', title: 'Roasted Walnut', availableForSale: true, price: 250000, imageUrl: '/kano-stool/main.png', hoverImageUrl: '/kano-stool/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/asa-1',
+    handle: 'the-asaba-dresser',
+    title: 'The Asaba Dresser',
+    price: 1200000,
+    availableForSale: true,
+    featuredImageUrl: '/asaba-dresser/main.png',
+    secondaryImageUrl: '/asaba-dresser/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/asa-1', title: 'Bleached Ash', availableForSale: true, price: 1200000, imageUrl: '/asaba-dresser/main.png', hoverImageUrl: '/asaba-dresser/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/lar-1',
+    handle: 'the-lari-mirror',
+    title: 'The Lari Mirror',
+    price: 380000,
+    availableForSale: true,
+    featuredImageUrl: '/lari-mirror/main.png',
+    secondaryImageUrl: '/lari-mirror/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/lar-1', title: 'Brushed Brass', availableForSale: true, price: 380000, imageUrl: '/lari-mirror/main.png', hoverImageUrl: '/lari-mirror/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/ota-1',
+    handle: 'the-ota-chair',
+    title: 'The Ota Chair',
+    price: 580000,
+    availableForSale: true,
+    featuredImageUrl: '/ota-chair/main.png',
+    secondaryImageUrl: '/ota-chair/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/ota-1', title: 'Charcoal Black', availableForSale: true, price: 580000, imageUrl: '/ota-chair/main.png', hoverImageUrl: '/ota-chair/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/wov-1',
+    handle: 'the-woven-lounge',
+    title: 'The Woven Lounge',
+    price: 720000,
+    availableForSale: true,
+    featuredImageUrl: '/woven-lounge/main.png',
+    secondaryImageUrl: '/woven-lounge/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/wov-1', title: 'Natural Rattan', availableForSale: true, price: 720000, imageUrl: '/woven-lounge/main.png', hoverImageUrl: '/woven-lounge/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/bol-1',
+    handle: 'the-bolster-daybed',
+    title: 'The Bolster Daybed',
+    price: 1450000,
+    availableForSale: true,
+    featuredImageUrl: '/bolster-daybed/main.png',
+    secondaryImageUrl: '/bolster-daybed/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/bol-1', title: 'Pebble Grey', availableForSale: true, price: 1450000, imageUrl: '/bolster-daybed/main.png', hoverImageUrl: '/bolster-daybed/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/clo-1',
+    handle: 'the-cloud-sofa',
+    title: 'The Cloud Sofa',
+    price: 2150000,
+    availableForSale: true,
+    featuredImageUrl: '/cloud-sofa/main.png',
+    secondaryImageUrl: '/cloud-sofa/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/clo-1', title: 'Cloud White', availableForSale: true, price: 2150000, imageUrl: '/cloud-sofa/main.png', hoverImageUrl: '/cloud-sofa/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/vin-1',
+    handle: 'the-vinyl-stand',
+    title: 'The Vinyl Stand',
+    price: 420000,
+    availableForSale: true,
+    featuredImageUrl: '/vinyl-stand/main.png',
+    secondaryImageUrl: '/vinyl-stand/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/vin-1', title: 'Rich Walnut', availableForSale: true, price: 420000, imageUrl: '/vinyl-stand/main.png', hoverImageUrl: '/vinyl-stand/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/flo-1',
+    handle: 'the-floral-chaise',
+    title: 'The Floral Chaise',
+    price: 950000,
+    availableForSale: true,
+    featuredImageUrl: '/floral-chaise/main.png',
+    secondaryImageUrl: '/floral-chaise/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/flo-1', title: 'Vintage Floral', availableForSale: true, price: 950000, imageUrl: '/floral-chaise/main.png', hoverImageUrl: '/floral-chaise/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/woo-1',
+    handle: 'the-wood-nightstand',
+    title: 'The Wood Nightstand',
+    price: 350000,
+    availableForSale: true,
+    featuredImageUrl: '/wood-nightstand/main.png',
+    secondaryImageUrl: '/wood-nightstand/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/woo-1', title: 'Warm Teak', availableForSale: true, price: 350000, imageUrl: '/wood-nightstand/main.png', hoverImageUrl: '/wood-nightstand/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/wav-1',
+    handle: 'the-wavy-bookshelf',
+    title: 'The Wavy Bookshelf',
+    price: 880000,
+    availableForSale: true,
+    featuredImageUrl: '/wavy-bookshelf/main.png',
+    secondaryImageUrl: '/wavy-bookshelf/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/wav-1', title: 'Matte Cream', availableForSale: true, price: 880000, imageUrl: '/wavy-bookshelf/main.png', hoverImageUrl: '/wavy-bookshelf/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/gla-1',
+    handle: 'the-glass-cabinet',
+    title: 'The Glass Cabinet',
+    price: 1650000,
+    availableForSale: true,
+    featuredImageUrl: '/glass-cabinet/main.png',
+    secondaryImageUrl: '/glass-cabinet/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/gla-1', title: 'Matte Black', availableForSale: true, price: 1650000, imageUrl: '/glass-cabinet/main.png', hoverImageUrl: '/glass-cabinet/main.png' }
+    ]
+  },
+  {
+    id: 'gid://shopify/Product/bou-1',
+    handle: 'the-boucle-chair',
+    title: 'The Boucle Chair',
+    price: 650000,
+    availableForSale: true,
+    featuredImageUrl: '/boucle-chair/main.png',
+    secondaryImageUrl: '/boucle-chair/front.png',
+    variants: [
+      { id: 'gid://shopify/ProductVariant/bou-1', title: 'Ivory Boucle', availableForSale: true, price: 650000, imageUrl: '/boucle-chair/main.png', hoverImageUrl: '/boucle-chair/main.png' }
+    ]
+  },
 ];
 
 export async function getShopifyProducts(): Promise<ShopifyProduct[]> {

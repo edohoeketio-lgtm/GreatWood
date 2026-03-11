@@ -6,29 +6,40 @@ import { ProductTile } from '@/components/shared/ProductTile';
 import styles from './page.module.css';
 import Link from 'next/link';
 import { getShopifyProducts } from '@/lib/cms/shopifyMock';
+import { getSanityProduct } from '@/lib/cms/sanityMock';
 
 export default async function Home() {
   const allProducts = await getShopifyProducts();
-  const featuredProducts = allProducts.slice(0, 3).map(product => ({
-    id: product.id,
-    slug: product.handle,
-    title: product.title,
-    price: product.price,
-    imageUrl: product.featuredImageUrl,
-    secondaryImageUrl: product.secondaryImageUrl,
-    badge: product.title.includes('Table') ? 'Custom Order' : undefined,
-    swatches: product.variants.map((v, i) => ({
-      id: `${product.id}-s${i}`,
-      name: v.title,
-      colorHex: v.title === 'Yellow Ochre' ? '#Edb442' 
-        : v.title === 'Blue Velvet' ? '#4A6FA5' 
-        : v.title === 'Walnut' ? '#5C4033'
-        : v.title === 'Warm Oak' ? '#ae734e'
-        : '#E5E0D8',
-      tileImageUrl: v.imageUrl,
-      tileHoverUrl: v.hoverImageUrl,
-    }))
-  }));
+  
+  // Resolve Sanity data for colors
+  const enrichProducts = async (products: any[]) => {
+    return Promise.all(products.map(async (product) => {
+      const sanityData = await getSanityProduct(product.handle).catch(() => null);
+      return {
+        id: product.id,
+        slug: product.handle,
+        title: product.title,
+        price: product.price,
+        imageUrl: product.featuredImageUrl,
+        secondaryImageUrl: product.secondaryImageUrl,
+        badge: product.title.includes('Table') ? 'Custom Order' : undefined,
+        swatches: product.variants.map((v: any, i: number) => {
+          const sanitySwatch = sanityData?.swatches?.find(s => s.name === v.title);
+          return {
+            id: `${product.id}-s${i}`,
+            name: v.title,
+            colorHex: sanitySwatch?.colorHex || '#E5E0D8',
+            tileImageUrl: v.imageUrl,
+            tileHoverUrl: v.hoverImageUrl,
+          };
+        })
+      };
+    }));
+  };
+
+  const featuredProducts = await enrichProducts(allProducts.slice(0, 3));
+  const newArrivals = await enrichProducts(allProducts.slice(-6)); // Get 6 of the new items
+
   return (
     <main className={styles.main}>
         {/* Editoral Hero */}
@@ -59,6 +70,32 @@ export default async function Home() {
             />
             <Grid columns={3}>
               {featuredProducts.map((product) => (
+                <ProductTile
+                  key={product.id}
+                  title={product.title}
+                  slug={product.slug}
+                  price={product.price}
+                  imageUrl={product.imageUrl}
+                  secondaryImageUrl={product.secondaryImageUrl}
+                  swatches={product.swatches}
+                  badge={product.badge}
+                />
+              ))}
+            </Grid>
+          </Container>
+        </section>
+
+        {/* New Arrivals Assortment */}
+        <section className={styles.featuredSection}>
+          <Container>
+            <SectionHeader 
+              title="New Arrivals" 
+              description="Discover the latest additions to our collection."
+              ctaText="Shop New"
+              ctaLink="/shop/new"
+            />
+            <Grid columns={3}>
+              {newArrivals.map((product) => (
                 <ProductTile
                   key={product.id}
                   title={product.title}
