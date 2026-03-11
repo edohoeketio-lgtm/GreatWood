@@ -34,9 +34,7 @@ export function SwatchSelector({
     <div className={styles.wrapper}>
       {swatches.map((swatch) => {
         const isActive = swatch.id === activeId;
-        const swatchStyle = swatch.imageUrl
-          ? { backgroundImage: `url(${swatch.imageUrl})`, backgroundSize: 'cover' }
-          : { backgroundColor: swatch.colorHex || '#EFECE5' };
+        const swatchStyle = { backgroundColor: swatch.colorHex || '#EFECE5' };
 
         return (
           <button
