@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: var(--bg-elevated); /* Acts as the LQIP background */
+  background-color: inherit; /* Inherit from parent container */
 }
 
 /* Aspect Ratios to prevent CLS */
@@ -28,6 +28,11 @@
   height: 100%;
   opacity: 0; /* Hidden until loaded */
   transition: opacity 600ms var(--transition-ease);
+}
+
+/* PNG product shots (no background) should contain, not crop */
+.imageContain {
+  object-fit: contain !important;
 }
 
 .loaded {

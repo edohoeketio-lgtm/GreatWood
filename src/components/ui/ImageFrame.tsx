@@ -7,6 +7,7 @@ import styles from './ImageFrame.module.css';
 interface ImageFrameProps extends Omit<ImageProps, 'onLoad'> {
   aspectRatio?: 'auto' | 'square' | 'video' | 'portrait';
   containerClassName?: string;
+  objectFit?: 'cover' | 'contain';
 }
 
 export function ImageFrame({
@@ -15,6 +16,7 @@ export function ImageFrame({
   aspectRatio = 'auto',
   containerClassName = '',
   className = '',
+  objectFit = 'cover',
   ...props
 }: ImageFrameProps) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -29,6 +31,7 @@ export function ImageFrame({
 
   const imageClasses = [
     styles.image,
+    objectFit === 'contain' ? styles.imageContain : '',
     isLoaded ? styles.loaded : '',
     className,
   ]

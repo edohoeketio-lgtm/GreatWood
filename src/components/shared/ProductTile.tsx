@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { ImageFrame } from '../ui/ImageFrame';
 import { PriceBlock } from './PriceBlock';
@@ -6,13 +8,22 @@ import { SwatchSelector } from './SwatchSelector';
 import { Badge } from '../ui/Badge';
 import styles from './ProductTile.module.css';
 
+interface SwatchData {
+  id: string;
+  name: string;
+  colorHex?: string;
+  imageUrl?: string;
+  tileImageUrl?: string;
+  tileHoverUrl?: string;
+}
+
 interface ProductTileProps {
   title: string;
   slug: string;
   price: number;
   imageUrl: string;
   secondaryImageUrl?: string;
-  swatches?: Array<{ id: string; name: string; colorHex?: string; imageUrl?: string }>;
+  swatches?: SwatchData[];
   badge?: string;
 }
 
@@ -25,23 +36,35 @@ export function ProductTile({
   swatches = [],
   badge,
 }: ProductTileProps) {
+  const [activeImage, setActiveImage] = useState(imageUrl);
+  const [activeHover, setActiveHover] = useState(secondaryImageUrl);
+
+  const handleSwatchSelect = (swatch: SwatchData) => {
+    if (swatch.tileImageUrl) {
+      setActiveImage(swatch.tileImageUrl);
+    }
+    if (swatch.tileHoverUrl) {
+      setActiveHover(swatch.tileHoverUrl);
+    } else {
+      setActiveHover(undefined);
+    }
+  };
+
   return (
     <div className={styles.wrapper}>
       <Link href={`/product/${slug}`} className={styles.imageLink}>
-        <div className={styles.imageWrapper} data-has-secondary={!!secondaryImageUrl}>
-          {/* Primary image — stays in normal flow, provides height */}
+        <div className={styles.imageWrapper} data-has-secondary={!!activeHover}>
           <ImageFrame
-            src={imageUrl}
+            src={activeImage}
             alt={title}
             aspectRatio="portrait"
             width={600}
             height={750}
           />
-          {/* Secondary image — wrapped in an absolutely-positioned overlay */}
-          {secondaryImageUrl && (
+          {activeHover && (
             <div className={styles.secondaryOverlay}>
               <ImageFrame
-                src={secondaryImageUrl}
+                src={activeHover}
                 alt={`${title} hover`}
                 aspectRatio="portrait"
                 width={600}
@@ -69,7 +92,7 @@ export function ProductTile({
         
         {swatches.length > 0 && (
           <div className={styles.swatchRow}>
-            <SwatchSelector swatches={swatches} size="sm" />
+            <SwatchSelector swatches={swatches} size="sm" onSelect={handleSwatchSelect} />
             <span className={styles.swatchCount}>{swatches.length} finishes available</span>
           </div>
         )}

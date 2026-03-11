@@ -13,7 +13,7 @@
 
 .imageWrapper {
   position: relative;
-  background-color: var(--bg-elevated);
+  background-color: var(--bg-canvas);
 }
 
 /* Secondary image overlay — sits on top, hidden by default, fades in on hover */

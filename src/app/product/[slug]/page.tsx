@@ -6,6 +6,7 @@ import { PairsWellWith } from '@/components/pdp/PairsWellWith';
 import { TrustSignals } from '@/components/shared/TrustSignals';
 import { calculateDelivery } from '@/lib/utils/delivery';
 import { getSanityProduct } from '@/lib/cms/sanityMock';
+import { getShopifyProducts } from '@/lib/cms/shopifyMock';
 import styles from './page.module.css';
 
 // MOCK_RELATED left here until Sanity handles recommendations
@@ -55,17 +56,24 @@ export default async function ProductPage({ params }: PageProps) {
     }
   ]);
 
+  const allProducts = await getShopifyProducts();
+  const shopifyProduct = allProducts.find(p => p.handle === resolvedParams.slug);
+
   const unifiedProduct = {
     id: product.shopifyHandle,
     title: product.title,
     description: product.editorialDescription,
-    price: 1250000,
+    price: shopifyProduct?.price ?? 0,
     badge: 'In Stock',
-    swatches: product.swatches.map(s => ({
-      id: s.shopifyVariantId,
-      name: s.name,
-      colorHex: s.colorHex
-    }))
+    swatches: product.swatches.map(s => {
+      const shopifyVariant = shopifyProduct?.variants.find(v => v.id === s.shopifyVariantId);
+      return {
+        id: s.shopifyVariantId,
+        name: s.name,
+        colorHex: s.colorHex,
+        imageUrl: shopifyVariant?.imageUrl || shopifyProduct?.featuredImageUrl
+      };
+    })
   };
 
   return (

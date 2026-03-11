@@ -18,6 +18,8 @@ export interface ShopifyProduct {
     title: string;
     availableForSale: boolean;
     price: number;
+    imageUrl?: string;
+    hoverImageUrl?: string;
   }>;
 }
 
@@ -51,11 +53,11 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Sola Chair',
     price: 320000,
     availableForSale: true,
-    featuredImageUrl: '/yellow-chair/main.jpg',
+    featuredImageUrl: '/yellow-chair/Main.png',
     secondaryImageUrl: '/yellow-chair/hover.jpg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/4', title: 'Yellow Ochre', availableForSale: true, price: 320000 },
-      { id: 'gid://shopify/ProductVariant/4b', title: 'Blue Velvet', availableForSale: true, price: 320000 }
+      { id: 'gid://shopify/ProductVariant/4', title: 'Yellow Ochre', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/Main.png', hoverImageUrl: '/yellow-chair/hover.jpg' },
+      { id: 'gid://shopify/ProductVariant/4b', title: 'Blue Velvet', availableForSale: true, price: 320000, imageUrl: '/yellow-chair/blue/Main fix.png', hoverImageUrl: '/yellow-chair/blue/main.jpg' }
     ]
   },
   {
@@ -64,10 +66,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Eko Console',
     price: 680000,
     availableForSale: true,
-    featuredImageUrl: '/the-eko-console/main.jpg',
-    secondaryImageUrl: '/the-eko-console/front-view.jpg',
+    featuredImageUrl: '/the-eko-console/Main transparent.png',
+    secondaryImageUrl: '/the-eko-console/main.jpg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000 }
+      { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000, imageUrl: '/the-eko-console/Main transparent.png', hoverImageUrl: '/the-eko-console/main.jpg' }
     ]
   },
   {
