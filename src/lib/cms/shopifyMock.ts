@@ -67,10 +67,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     title: 'The Eko Console',
     price: 680000,
     availableForSale: true,
-    featuredImageUrl: '/the-eko-console/Main transparent.png',
-    secondaryImageUrl: '/the-eko-console/main.jpg',
+    featuredImageUrl: '/Console/console realistic.jpeg',
+    secondaryImageUrl: '/Console/console realistic.jpeg',
     variants: [
-      { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000, imageUrl: '/the-eko-console/Main transparent.png', hoverImageUrl: '/the-eko-console/main.jpg' }
+      { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000, imageUrl: '/Console/console realistic.jpeg', hoverImageUrl: '/Console/console realistic.jpeg' }
     ]
   },
   {

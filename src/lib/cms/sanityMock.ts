@@ -102,7 +102,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Eko Console',
     editorialDescription: 'Named after Lagos itself, The Eko Console channels the city\'s restless sophistication into a single surface. A slim, architectural profile in solid walnut with brass-finished handles and tapered legs. Designed to anchor an entryway, hallway, or living space with quiet authority.',
     gallery: [
-      { id: 'eko-1', url: '/the-eko-console/main.jpg', alt: 'The Eko Console realistic view' },
+      { id: 'eko-1', url: '/Console/console realistic.jpeg', alt: 'The Eko Console realistic view' },
 
       { id: 'eko-3', url: '/the-eko-console/back-view.jpg', alt: 'The Eko Console back view' },
       { id: 'eko-4', url: '/the-eko-console/handles-detail.jpg', alt: 'The Eko Console handle detail' },
