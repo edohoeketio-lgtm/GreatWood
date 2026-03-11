@@ -65,8 +65,8 @@ export default async function Home() {
             <SectionHeader 
               title="Curated Assortment" 
               description="Pieces designed to anchor your space."
-              ctaText="View All Seating"
-              ctaLink="/shop/seating"
+              ctaText="View All Products"
+              ctaLink="/shop"
             />
             <Grid columns={3}>
               {featuredProducts.map((product) => (

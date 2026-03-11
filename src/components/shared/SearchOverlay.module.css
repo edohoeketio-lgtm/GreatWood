@@ -103,3 +103,18 @@
   border-color: var(--text-primary);
   background-color: var(--bg-canvas);
 }
+
+@media (max-width: 768px) {
+  .inner {
+    padding-top: 2rem;
+  }
+  
+  .input {
+    font-size: var(--text-lg);
+  }
+  
+  .searchHeader {
+    padding-bottom: 0.5rem;
+  }
+}
+
