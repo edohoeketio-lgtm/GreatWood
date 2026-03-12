@@ -25,19 +25,7 @@ export interface ShopifyProduct {
 }
 
 const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
-  {
-    id: 'gid://shopify/Product/1',
-    handle: 'the-noka-sofa',
-    title: 'The Noka Sofa',
-    price: 1250000,
-    category: 'Sofas',
-    availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=600',
-    variants: [
-      { id: 'gid://shopify/ProductVariant/1', title: 'Oatmeal Linen', availableForSale: true, price: 1250000 },
-      { id: 'gid://shopify/ProductVariant/2', title: 'Charcoal Velvet', availableForSale: true, price: 1250000 }
-    ]
-  },
+
   {
     id: 'gid://shopify/Product/2',
     handle: 'the-tapered-side-table',
@@ -312,9 +300,8 @@ export const RELATED_PRODUCTS_MAP: Record<string, string[]> = {
   'the-wavy-bookshelf': ['the-cloud-sofa', 'the-boucle-chair', 'the-ayo-lounge'],
   'the-glass-cabinet': ['the-ota-chair', 'the-vinyl-stand', 'the-lari-mirror'],
   'the-boucle-chair': ['the-cloud-sofa', 'the-wavy-bookshelf', 'the-woven-lounge'],
-  'the-noka-sofa': ['the-eko-console', 'the-sola-chair', 'the-pebble-table'],
-  'the-eko-console': ['the-noka-sofa', 'the-sola-chair', 'the-lari-mirror'],
-  'the-sola-chair': ['the-noka-sofa', 'the-eko-console', 'the-tapered-side-table'],
+  'the-eko-console': ['the-sola-chair', 'the-lari-mirror', 'the-tapered-side-table'],
+  'the-sola-chair': ['the-eko-console', 'the-tapered-side-table', 'the-pebble-table'],
   'the-tapered-side-table': ['the-sola-chair', 'the-boucle-chair', 'the-wavy-bookshelf'],
 };
 

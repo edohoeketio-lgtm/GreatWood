@@ -49,11 +49,11 @@ const MOCK_ORDERS: Record<string, OrderData> = {
     items: [
       {
         id: '1',
-        title: 'The Noka Sofa',
-        swatchName: 'Oatmeal Linen',
-        price: 1250000,
+        title: 'The Sapele Sofa',
+        swatchName: 'Almond Beige',
+        price: 1850000,
         quantity: 1,
-        imageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=300'
+        imageUrl: '/sapele-sofa/main.png'
       },
       {
         id: '2',
@@ -103,11 +103,11 @@ const MOCK_ORDERS: Record<string, OrderData> = {
     items: [
       {
         id: '4',
-        title: 'The Noka Sofa',
-        swatchName: 'Custom Olive Velvet',
-        price: 1250000,
+        title: 'The Cloud Sofa',
+        swatchName: 'Cloud White',
+        price: 2150000,
         quantity: 1,
-        imageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=300'
+        imageUrl: '/cloud-sofa/main.png'
       }
     ]
   },
