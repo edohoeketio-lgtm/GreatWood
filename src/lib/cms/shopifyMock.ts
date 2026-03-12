@@ -229,10 +229,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     price: 950000,
     category: 'Chairs',
     availableForSale: true,
-    featuredImageUrl: '/floral-chaise/main.png',
-    secondaryImageUrl: '/floral-chaise/front.png',
+    featuredImageUrl: '/wood-nightstand/main.png',
+    secondaryImageUrl: '/wood-nightstand/front.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/flo-1', title: 'Vintage Floral', availableForSale: true, price: 950000, imageUrl: '/floral-chaise/main.png', hoverImageUrl: '/floral-chaise/main.png' }
+      { id: 'gid://shopify/ProductVariant/flo-1', title: 'Vintage Floral', availableForSale: true, price: 950000, imageUrl: '/wood-nightstand/main.png', hoverImageUrl: '/wood-nightstand/main.png' }
     ]
   },
   {
@@ -242,10 +242,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     price: 350000,
     category: 'Storage',
     availableForSale: true,
-    featuredImageUrl: '/wood-nightstand/main.png',
-    secondaryImageUrl: '/wood-nightstand/front.png',
+    featuredImageUrl: '/wavy-bookshelf/main.png',
+    secondaryImageUrl: '/wavy-bookshelf/front.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/woo-1', title: 'Warm Teak', availableForSale: true, price: 350000, imageUrl: '/wood-nightstand/main.png', hoverImageUrl: '/wood-nightstand/main.png' }
+      { id: 'gid://shopify/ProductVariant/woo-1', title: 'Warm Teak', availableForSale: true, price: 350000, imageUrl: '/wavy-bookshelf/main.png', hoverImageUrl: '/wavy-bookshelf/main.png' }
     ]
   },
   {
@@ -255,10 +255,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     price: 880000,
     category: 'Storage',
     availableForSale: true,
-    featuredImageUrl: '/wavy-bookshelf/main.png',
-    secondaryImageUrl: '/wavy-bookshelf/front.png',
+    featuredImageUrl: '/boucle-chair/main.png',
+    secondaryImageUrl: '/boucle-chair/front.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/wav-1', title: 'Matte Cream', availableForSale: true, price: 880000, imageUrl: '/wavy-bookshelf/main.png', hoverImageUrl: '/wavy-bookshelf/main.png' }
+      { id: 'gid://shopify/ProductVariant/wav-1', title: 'Matte Cream', availableForSale: true, price: 880000, imageUrl: '/boucle-chair/main.png', hoverImageUrl: '/boucle-chair/main.png' }
     ]
   },
   {
@@ -281,10 +281,10 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     price: 650000,
     category: 'Chairs',
     availableForSale: true,
-    featuredImageUrl: '/boucle-chair/main.png',
-    secondaryImageUrl: '/boucle-chair/front.png',
+    featuredImageUrl: '/floral-chaise/main.png',
+    secondaryImageUrl: '/floral-chaise/front.png',
     variants: [
-      { id: 'gid://shopify/ProductVariant/bou-1', title: 'Ivory Boucle', availableForSale: true, price: 650000, imageUrl: '/boucle-chair/main.png', hoverImageUrl: '/boucle-chair/main.png' }
+      { id: 'gid://shopify/ProductVariant/bou-1', title: 'Ivory Boucle', availableForSale: true, price: 650000, imageUrl: '/floral-chaise/main.png', hoverImageUrl: '/floral-chaise/main.png' }
     ]
   },
 ];

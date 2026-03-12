@@ -161,7 +161,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'sap-2', url: '/sapele-sofa/front.png', alt: 'The Sapele Sofa front' },
       { id: 'sap-3', url: '/sapele-sofa/side.png', alt: 'The Sapele Sofa side' },
       { id: 'sap-4', url: '/sapele-sofa/back.png', alt: 'The Sapele Sofa back' },
-      { id: 'sap-5', url: '/sapele-sofa/upclose.png', alt: 'The Sapele Sofa upclose' }
+      { id: 'sap-5', url: '/sapele-sofa/macro.png', alt: 'The Sapele Sofa upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '210 cm' },
@@ -189,7 +189,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'ayo-2', url: '/ayo-lounge/front.png', alt: 'The Ayo Lounge front' },
       { id: 'ayo-3', url: '/ayo-lounge/side.png', alt: 'The Ayo Lounge side' },
       { id: 'ayo-4', url: '/ayo-lounge/back.png', alt: 'The Ayo Lounge back' },
-      { id: 'ayo-5', url: '/ayo-lounge/upclose.png', alt: 'The Ayo Lounge upclose' }
+      { id: 'ayo-5', url: '/ayo-lounge/macro.png', alt: 'The Ayo Lounge upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '85 cm' },
@@ -215,7 +215,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'peb-2', url: '/pebble-table/front.png', alt: 'The Pebble Table front' },
       { id: 'peb-3', url: '/pebble-table/side.png', alt: 'The Pebble Table side' },
       { id: 'peb-4', url: '/pebble-table/back.png', alt: 'The Pebble Table back' },
-      { id: 'peb-5', url: '/pebble-table/upclose.png', alt: 'The Pebble Table upclose' }
+      { id: 'peb-5', url: '/pebble-table/macro.png', alt: 'The Pebble Table upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '120 cm' },
@@ -241,7 +241,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'kan-2', url: '/kano-stool/front.png', alt: 'The Kano Stool front' },
       { id: 'kan-3', url: '/kano-stool/side.png', alt: 'The Kano Stool side' },
       { id: 'kan-4', url: '/kano-stool/back.png', alt: 'The Kano Stool back' },
-      { id: 'kan-5', url: '/kano-stool/upclose.png', alt: 'The Kano Stool upclose' }
+      { id: 'kan-5', url: '/kano-stool/macro.png', alt: 'The Kano Stool upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '40 cm' },
@@ -267,7 +267,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'asa-2', url: '/asaba-dresser/front.png', alt: 'The Asaba Dresser front' },
       { id: 'asa-3', url: '/asaba-dresser/side.png', alt: 'The Asaba Dresser side' },
       { id: 'asa-4', url: '/asaba-dresser/back.png', alt: 'The Asaba Dresser back' },
-      { id: 'asa-5', url: '/asaba-dresser/upclose.png', alt: 'The Asaba Dresser upclose' }
+      { id: 'asa-5', url: '/asaba-dresser/macro.png', alt: 'The Asaba Dresser upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '150 cm' },
@@ -294,7 +294,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'lar-2', url: '/lari-mirror/front.png', alt: 'The Lari Mirror front' },
       { id: 'lar-3', url: '/lari-mirror/side.png', alt: 'The Lari Mirror side' },
       { id: 'lar-4', url: '/lari-mirror/back.png', alt: 'The Lari Mirror back' },
-      { id: 'lar-5', url: '/lari-mirror/upclose.png', alt: 'The Lari Mirror upclose' }
+      { id: 'lar-5', url: '/lari-mirror/macro.png', alt: 'The Lari Mirror upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '90 cm' },
@@ -320,7 +320,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'ota-2', url: '/ota-chair/front.png', alt: 'The Ota Chair front' },
       { id: 'ota-3', url: '/ota-chair/side.png', alt: 'The Ota Chair side' },
       { id: 'ota-4', url: '/ota-chair/back.png', alt: 'The Ota Chair back' },
-      { id: 'ota-5', url: '/ota-chair/upclose.png', alt: 'The Ota Chair upclose' }
+      { id: 'ota-5', url: '/ota-chair/macro.png', alt: 'The Ota Chair upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '55 cm' },
@@ -347,7 +347,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'wov-2', url: '/woven-lounge/front.png', alt: 'The Woven Lounge front' },
       { id: 'wov-3', url: '/woven-lounge/side.png', alt: 'The Woven Lounge side' },
       { id: 'wov-4', url: '/woven-lounge/back.png', alt: 'The Woven Lounge back' },
-      { id: 'wov-5', url: '/woven-lounge/upclose.png', alt: 'The Woven Lounge upclose' }
+      { id: 'wov-5', url: '/woven-lounge/macro.png', alt: 'The Woven Lounge upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '75 cm' },
@@ -374,7 +374,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'bol-2', url: '/bolster-daybed/front.png', alt: 'The Bolster Daybed front' },
       { id: 'bol-3', url: '/bolster-daybed/side.png', alt: 'The Bolster Daybed side' },
       { id: 'bol-4', url: '/bolster-daybed/back.png', alt: 'The Bolster Daybed back' },
-      { id: 'bol-5', url: '/bolster-daybed/upclose.png', alt: 'The Bolster Daybed upclose' }
+      { id: 'bol-5', url: '/bolster-daybed/macro.png', alt: 'The Bolster Daybed upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '190 cm' },
@@ -401,7 +401,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'clo-2', url: '/cloud-sofa/front.png', alt: 'The Cloud Sofa front' },
       { id: 'clo-3', url: '/cloud-sofa/side.png', alt: 'The Cloud Sofa side' },
       { id: 'clo-4', url: '/cloud-sofa/back.png', alt: 'The Cloud Sofa back' },
-      { id: 'clo-5', url: '/cloud-sofa/upclose.png', alt: 'The Cloud Sofa upclose' }
+      { id: 'clo-5', url: '/cloud-sofa/macro.png', alt: 'The Cloud Sofa upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '230 cm' },
@@ -428,7 +428,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'vin-2', url: '/vinyl-stand/front.png', alt: 'The Vinyl Stand front' },
       { id: 'vin-3', url: '/vinyl-stand/side.png', alt: 'The Vinyl Stand side' },
       { id: 'vin-4', url: '/vinyl-stand/back.png', alt: 'The Vinyl Stand back' },
-      { id: 'vin-5', url: '/vinyl-stand/upclose.png', alt: 'The Vinyl Stand upclose' }
+      { id: 'vin-5', url: '/vinyl-stand/macro.png', alt: 'The Vinyl Stand upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '100 cm' },
@@ -451,11 +451,11 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Floral Chaise',
     editorialDescription: 'A poetic intervention in any room. The Floral Chaise wraps a sweeping, asymmetrical reclining profile in a vintage-inspired floral upholstery, creating a dramatic focal point.',
     gallery: [
-      { id: 'flo-1', url: '/floral-chaise/main.png', alt: 'The Floral Chaise main' },
-      { id: 'flo-2', url: '/floral-chaise/front.png', alt: 'The Floral Chaise front' },
-      { id: 'flo-3', url: '/floral-chaise/side.png', alt: 'The Floral Chaise side' },
-      { id: 'flo-4', url: '/floral-chaise/back.png', alt: 'The Floral Chaise back' },
-      { id: 'flo-5', url: '/floral-chaise/upclose.png', alt: 'The Floral Chaise upclose' }
+      { id: 'flo-1', url: '/wood-nightstand/main.png', alt: 'The Floral Chaise main' },
+      { id: 'flo-2', url: '/wood-nightstand/front.png', alt: 'The Floral Chaise front' },
+      { id: 'flo-3', url: '/wood-nightstand/side.png', alt: 'The Floral Chaise side' },
+      { id: 'flo-4', url: '/wood-nightstand/back.png', alt: 'The Floral Chaise back' },
+      { id: 'flo-5', url: '/wood-nightstand/macro.png', alt: 'The Floral Chaise upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '160 cm' },
@@ -466,7 +466,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       'Frame: Engineered wood',
       'Upholstery: Custom vintage floral jacquard'
     ],
-    blueprintUrl: '/floral-chaise/dimension.png',
+    blueprintUrl: '/wood-nightstand/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
     swatches: [
       { id: 'flo-s1', shopifyVariantId: 'gid://shopify/ProductVariant/flo-1', name: 'Vintage Floral', colorHex: '#908984' }
@@ -477,11 +477,11 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Wood Nightstand',
     editorialDescription: 'Quiet, functional elegance. The Wood Nightstand pairs warm teak with subtle bronze detailing, offering closed storage and a visually light footprint for the bedside.',
     gallery: [
-      { id: 'woo-1', url: '/wood-nightstand/main.png', alt: 'The Wood Nightstand main' },
-      { id: 'woo-2', url: '/wood-nightstand/front.png', alt: 'The Wood Nightstand front' },
-      { id: 'woo-3', url: '/wood-nightstand/side.png', alt: 'The Wood Nightstand side' },
-      { id: 'woo-4', url: '/wood-nightstand/back.png', alt: 'The Wood Nightstand back' },
-      { id: 'woo-5', url: '/wood-nightstand/upclose.png', alt: 'The Wood Nightstand upclose' }
+      { id: 'woo-1', url: '/wavy-bookshelf/main.png', alt: 'The Wood Nightstand main' },
+      { id: 'woo-2', url: '/wavy-bookshelf/front.png', alt: 'The Wood Nightstand front' },
+      { id: 'woo-3', url: '/wavy-bookshelf/side.png', alt: 'The Wood Nightstand side' },
+      { id: 'woo-4', url: '/wavy-bookshelf/back.png', alt: 'The Wood Nightstand back' },
+      { id: 'woo-5', url: '/wavy-bookshelf/macro.png', alt: 'The Wood Nightstand upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '50 cm' },
@@ -492,7 +492,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       'Material: Solid Teak and Teak veneer',
       'Hardware: Antiqued bronze pulls'
     ],
-    blueprintUrl: '/wood-nightstand/dimension.png',
+    blueprintUrl: '/wavy-bookshelf/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
     swatches: [
       { id: 'woo-s1', shopifyVariantId: 'gid://shopify/ProductVariant/woo-1', name: 'Warm Teak', colorHex: '#7E5B42' }
@@ -503,11 +503,11 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Wavy Bookshelf',
     editorialDescription: 'Defying rigid library aesthetics, the Wavy Bookshelf introduces an undulating, playful structure to display. Finished in matte cream, it acts as both storage and modern sculpture.',
     gallery: [
-      { id: 'wav-1', url: '/wavy-bookshelf/main.png', alt: 'The Wavy Bookshelf main' },
-      { id: 'wav-2', url: '/wavy-bookshelf/front.png', alt: 'The Wavy Bookshelf front' },
-      { id: 'wav-3', url: '/wavy-bookshelf/side.png', alt: 'The Wavy Bookshelf side' },
-      { id: 'wav-4', url: '/wavy-bookshelf/back.png', alt: 'The Wavy Bookshelf back' },
-      { id: 'wav-5', url: '/wavy-bookshelf/upclose.png', alt: 'The Wavy Bookshelf upclose' }
+      { id: 'wav-1', url: '/boucle-chair/main.png', alt: 'The Wavy Bookshelf main' },
+      { id: 'wav-2', url: '/boucle-chair/front.png', alt: 'The Wavy Bookshelf front' },
+      { id: 'wav-3', url: '/boucle-chair/side.png', alt: 'The Wavy Bookshelf side' },
+      { id: 'wav-4', url: '/boucle-chair/back.png', alt: 'The Wavy Bookshelf back' },
+      { id: 'wav-5', url: '/boucle-chair/macro.png', alt: 'The Wavy Bookshelf upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '110 cm' },
@@ -518,7 +518,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       'Material: CNC-routed MDF',
       'Finish: Matte Cream polyurethane lacquer'
     ],
-    blueprintUrl: '/wavy-bookshelf/dimension.png',
+    blueprintUrl: '/boucle-chair/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
     swatches: [
       { id: 'wav-s1', shopifyVariantId: 'gid://shopify/ProductVariant/wav-1', name: 'Matte Cream', colorHex: '#D9D3C8' }
@@ -533,7 +533,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'gla-2', url: '/glass-cabinet/front.png', alt: 'The Glass Cabinet front' },
       { id: 'gla-3', url: '/glass-cabinet/side.png', alt: 'The Glass Cabinet side' },
       { id: 'gla-4', url: '/glass-cabinet/back.png', alt: 'The Glass Cabinet back' },
-      { id: 'gla-5', url: '/glass-cabinet/upclose.png', alt: 'The Glass Cabinet upclose' }
+      { id: 'gla-5', url: '/glass-cabinet/macro.png', alt: 'The Glass Cabinet upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '95 cm' },
@@ -556,11 +556,11 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
     title: 'The Boucle Chair',
     editorialDescription: 'A tactile delight. The Boucle Chair wraps a curvaceous, embracing form in rich ivory boucle, offering an incredibly soft and visually inviting accent piece for any contemporary corner.',
     gallery: [
-      { id: 'bou-1', url: '/boucle-chair/main.png', alt: 'The Boucle Chair main' },
-      { id: 'bou-2', url: '/boucle-chair/front.png', alt: 'The Boucle Chair front' },
-      { id: 'bou-3', url: '/boucle-chair/side.png', alt: 'The Boucle Chair side' },
-      { id: 'bou-4', url: '/boucle-chair/back.png', alt: 'The Boucle Chair back' },
-      { id: 'bou-5', url: '/boucle-chair/upclose.png', alt: 'The Boucle Chair upclose' }
+      { id: 'bou-1', url: '/floral-chaise/main.png', alt: 'The Boucle Chair main' },
+      { id: 'bou-2', url: '/floral-chaise/front.png', alt: 'The Boucle Chair front' },
+      { id: 'bou-3', url: '/floral-chaise/side.png', alt: 'The Boucle Chair side' },
+      { id: 'bou-4', url: '/floral-chaise/back.png', alt: 'The Boucle Chair back' },
+      { id: 'bou-5', url: '/floral-chaise/macro.png', alt: 'The Boucle Chair upclose' }
     ],
     dimensions: [
       { label: 'Overall Width', value: '82 cm' },
@@ -571,7 +571,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       'Frame: Curved plywood',
       'Upholstery: High-pile Ivory Boucle fabric'
     ],
-    blueprintUrl: '/boucle-chair/dimension.png',
+    blueprintUrl: '/floral-chaise/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
     swatches: [
       { id: 'bou-s1', shopifyVariantId: 'gid://shopify/ProductVariant/bou-1', name: 'Ivory Boucle', colorHex: '#FDFBF7' }
