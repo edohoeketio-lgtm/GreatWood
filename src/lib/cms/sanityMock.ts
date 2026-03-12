@@ -155,7 +155,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-sapele-sofa': {
     shopifyHandle: 'the-sapele-sofa',
     title: 'The Sapele Sofa',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Crafted from ethically sourced Sapele wood, this sofa anchors the living space with its warm mahogany-like tones and deep, inviting cushions. Designed for long evenings of conversation in a high-end Lagosian home.',
     gallery: [
       { id: 'sap-1', url: '/sapele-sofa/main.png', alt: 'The Sapele Sofa main' },
       { id: 'sap-2', url: '/sapele-sofa/front.png', alt: 'The Sapele Sofa front' },
@@ -164,12 +164,15 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'sap-5', url: '/sapele-sofa/upclose.png', alt: 'The Sapele Sofa upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '210 cm' },
+      { label: 'Overall Depth', value: '90 cm' },
+      { label: 'Overall Height', value: '82 cm' },
+      { label: 'Seat Height', value: '45 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Solid Sapele wood',
+      'Cushions: High-resiliency foam wrapped in down',
+      'Upholstery: Premium Linen Blend'
     ],
     blueprintUrl: '/sapele-sofa/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -180,7 +183,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-ayo-lounge': {
     shopifyHandle: 'the-ayo-lounge',
     title: 'The Ayo Lounge',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'The Ayo Lounge reimagines classic mid-century lines with a distinctively vibrant African palette. Its deep olive green upholstery strikes a perfect balance against structural oak, creating a sanctuary of calm.',
     gallery: [
       { id: 'ayo-1', url: '/ayo-lounge/main.png', alt: 'The Ayo Lounge main' },
       { id: 'ayo-2', url: '/ayo-lounge/front.png', alt: 'The Ayo Lounge front' },
@@ -189,12 +192,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'ayo-5', url: '/ayo-lounge/upclose.png', alt: 'The Ayo Lounge upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '85 cm' },
+      { label: 'Overall Depth', value: '88 cm' },
+      { label: 'Overall Height', value: '78 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Solid Oak',
+      'Upholstery: Italian Olive Green Velvet'
     ],
     blueprintUrl: '/ayo-lounge/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -205,7 +209,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-pebble-table': {
     shopifyHandle: 'the-pebble-table',
     title: 'The Pebble Table',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Inspired by the smoothed stones of the Zuma Rock base, the Pebble Table introduces organic geometry into structured rooms. The porous, tactile surface of the travertine top offers a grounded, earthy luxury.',
     gallery: [
       { id: 'peb-1', url: '/pebble-table/main.png', alt: 'The Pebble Table main' },
       { id: 'peb-2', url: '/pebble-table/front.png', alt: 'The Pebble Table front' },
@@ -214,12 +218,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'peb-5', url: '/pebble-table/upclose.png', alt: 'The Pebble Table upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '120 cm' },
+      { label: 'Overall Depth', value: '65 cm' },
+      { label: 'Overall Height', value: '40 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Top: Solid Travertine Stone',
+      'Base: Fluted engineered wood with oak veneer'
     ],
     blueprintUrl: '/pebble-table/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -230,7 +235,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-kano-stool': {
     shopifyHandle: 'the-kano-stool',
     title: 'The Kano Stool',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'A nod to the architectural heritage of northern Nigeria, the Kano Stool features intersecting planes of roasted walnut. It serves beautifully as occasional seating or a sculptural side table.',
     gallery: [
       { id: 'kan-1', url: '/kano-stool/main.png', alt: 'The Kano Stool main' },
       { id: 'kan-2', url: '/kano-stool/front.png', alt: 'The Kano Stool front' },
@@ -239,12 +244,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'kan-5', url: '/kano-stool/upclose.png', alt: 'The Kano Stool upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '40 cm' },
+      { label: 'Overall Depth', value: '40 cm' },
+      { label: 'Overall Height', value: '45 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Material: 100% Solid Roasted Walnut',
+      'Finish: Hand-rubbed natural oil'
     ],
     blueprintUrl: '/kano-stool/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -255,7 +261,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-asaba-dresser': {
     shopifyHandle: 'the-asaba-dresser',
     title: 'The Asaba Dresser',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Minimalist precision meets organic warmth. The Asaba Dresser features six spacious drawers wrapped in bleached ash, providing a serene, clutter-free aesthetic for the modern bedroom.',
     gallery: [
       { id: 'asa-1', url: '/asaba-dresser/main.png', alt: 'The Asaba Dresser main' },
       { id: 'asa-2', url: '/asaba-dresser/front.png', alt: 'The Asaba Dresser front' },
@@ -264,12 +270,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'asa-5', url: '/asaba-dresser/upclose.png', alt: 'The Asaba Dresser upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '150 cm' },
+      { label: 'Overall Depth', value: '45 cm' },
+      { label: 'Overall Height', value: '80 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Body: Bleached Ash veneer',
+      'Legs: Solid Ash',
+      'Hardware: Concealed soft-close push mechanisms'
     ],
     blueprintUrl: '/asaba-dresser/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -280,7 +288,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-lari-mirror': {
     shopifyHandle: 'the-lari-mirror',
     title: 'The Lari Mirror',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'The Lari Mirror expands your space with its monumental scale and slender brushed brass frame. Its curved arch design softens angular rooms, reflecting both light and impeccable taste.',
     gallery: [
       { id: 'lar-1', url: '/lari-mirror/main.png', alt: 'The Lari Mirror main' },
       { id: 'lar-2', url: '/lari-mirror/front.png', alt: 'The Lari Mirror front' },
@@ -289,12 +297,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'lar-5', url: '/lari-mirror/upclose.png', alt: 'The Lari Mirror upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '90 cm' },
+      { label: 'Overall Height', value: '200 cm' },
+      { label: 'Depth', value: '3 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Brushed Brass',
+      'Glass: High-clarity silver-backed mirror'
     ],
     blueprintUrl: '/lari-mirror/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -305,7 +314,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-ota-chair': {
     shopifyHandle: 'the-ota-chair',
     title: 'The Ota Chair',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'A study in sophisticated contrast. The Ota Chair pairs a charcoal black structural frame with plush, tailored seating, yielding an imposing yet profoundly comfortable dining or accent chair.',
     gallery: [
       { id: 'ota-1', url: '/ota-chair/main.png', alt: 'The Ota Chair main' },
       { id: 'ota-2', url: '/ota-chair/front.png', alt: 'The Ota Chair front' },
@@ -314,12 +323,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'ota-5', url: '/ota-chair/upclose.png', alt: 'The Ota Chair upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '55 cm' },
+      { label: 'Overall Depth', value: '60 cm' },
+      { label: 'Overall Height', value: '85 cm' },
+      { label: 'Seat Height', value: '48 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Ebonized Oak',
+      'Upholstery: Charcoal performance fabric'
     ],
     blueprintUrl: '/ota-chair/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -330,7 +341,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-woven-lounge': {
     shopifyHandle: 'the-woven-lounge',
     title: 'The Woven Lounge',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Bringing the breeze of the coast indoors, the Woven Lounge utilizes natural rattan techniques over a contemporary timber frame. It is relaxed luxury embodied.',
     gallery: [
       { id: 'wov-1', url: '/woven-lounge/main.png', alt: 'The Woven Lounge main' },
       { id: 'wov-2', url: '/woven-lounge/front.png', alt: 'The Woven Lounge front' },
@@ -339,12 +350,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'wov-5', url: '/woven-lounge/upclose.png', alt: 'The Woven Lounge upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '75 cm' },
+      { label: 'Overall Depth', value: '82 cm' },
+      { label: 'Overall Height', value: '75 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Solid Teak',
+      'Weave: Natural untreated rattan',
+      'Cushion: Outdoor-grade linen'
     ],
     blueprintUrl: '/woven-lounge/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -355,7 +368,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-bolster-daybed': {
     shopifyHandle: 'the-bolster-daybed',
     title: 'The Bolster Daybed',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Versatility without compromise. The Bolster Daybed serves as both a sculptural dividing piece and an irresistible napping alcove, swathed in soft, pebble grey upholstery.',
     gallery: [
       { id: 'bol-1', url: '/bolster-daybed/main.png', alt: 'The Bolster Daybed main' },
       { id: 'bol-2', url: '/bolster-daybed/front.png', alt: 'The Bolster Daybed front' },
@@ -364,12 +377,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'bol-5', url: '/bolster-daybed/upclose.png', alt: 'The Bolster Daybed upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '190 cm' },
+      { label: 'Overall Depth', value: '80 cm' },
+      { label: 'Overall Height', value: '40 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Hardwood plywood',
+      'Upholstery: Pebble Grey performance wool-blend',
+      'Cushions: Cylinder memory foam bolsters'
     ],
     blueprintUrl: '/bolster-daybed/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -380,7 +395,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-cloud-sofa': {
     shopifyHandle: 'the-cloud-sofa',
     title: 'The Cloud Sofa',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'The Cloud Sofa promises exactly what its name suggests: an encompassing, unstructured seating experience. Deep proportions and cloud white fabric create an anchor for extreme relaxation.',
     gallery: [
       { id: 'clo-1', url: '/cloud-sofa/main.png', alt: 'The Cloud Sofa main' },
       { id: 'clo-2', url: '/cloud-sofa/front.png', alt: 'The Cloud Sofa front' },
@@ -389,12 +404,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'clo-5', url: '/cloud-sofa/upclose.png', alt: 'The Cloud Sofa upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '230 cm' },
+      { label: 'Overall Depth', value: '105 cm' },
+      { label: 'Overall Height', value: '80 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Kiln-dried hardwood',
+      'Suspension: Webbing',
+      'Upholstery: Cloud White heavy cotton'
     ],
     blueprintUrl: '/cloud-sofa/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -405,7 +422,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-vinyl-stand': {
     shopifyHandle: 'the-vinyl-stand',
     title: 'The Vinyl Stand',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'For the audiophile with an eye for design. The Vinyl Stand provides a dedicated shrine to analog sound, featuring slotted storage in rich walnut and a spacious top for a premium turntable.',
     gallery: [
       { id: 'vin-1', url: '/vinyl-stand/main.png', alt: 'The Vinyl Stand main' },
       { id: 'vin-2', url: '/vinyl-stand/front.png', alt: 'The Vinyl Stand front' },
@@ -414,12 +431,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'vin-5', url: '/vinyl-stand/upclose.png', alt: 'The Vinyl Stand upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '100 cm' },
+      { label: 'Overall Depth', value: '45 cm' },
+      { label: 'Overall Height', value: '70 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Body: Walnut veneer',
+      'Legs: Solid Walnut',
+      'Dividers: Powder-coated steel'
     ],
     blueprintUrl: '/vinyl-stand/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -430,7 +449,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-floral-chaise': {
     shopifyHandle: 'the-floral-chaise',
     title: 'The Floral Chaise',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'A poetic intervention in any room. The Floral Chaise wraps a sweeping, asymmetrical reclining profile in a vintage-inspired floral upholstery, creating a dramatic focal point.',
     gallery: [
       { id: 'flo-1', url: '/floral-chaise/main.png', alt: 'The Floral Chaise main' },
       { id: 'flo-2', url: '/floral-chaise/front.png', alt: 'The Floral Chaise front' },
@@ -439,12 +458,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'flo-5', url: '/floral-chaise/upclose.png', alt: 'The Floral Chaise upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '160 cm' },
+      { label: 'Overall Depth', value: '75 cm' },
+      { label: 'Overall Height', value: '85 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Engineered wood',
+      'Upholstery: Custom vintage floral jacquard'
     ],
     blueprintUrl: '/floral-chaise/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -455,7 +475,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-wood-nightstand': {
     shopifyHandle: 'the-wood-nightstand',
     title: 'The Wood Nightstand',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Quiet, functional elegance. The Wood Nightstand pairs warm teak with subtle bronze detailing, offering closed storage and a visually light footprint for the bedside.',
     gallery: [
       { id: 'woo-1', url: '/wood-nightstand/main.png', alt: 'The Wood Nightstand main' },
       { id: 'woo-2', url: '/wood-nightstand/front.png', alt: 'The Wood Nightstand front' },
@@ -464,12 +484,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'woo-5', url: '/wood-nightstand/upclose.png', alt: 'The Wood Nightstand upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '50 cm' },
+      { label: 'Overall Depth', value: '40 cm' },
+      { label: 'Overall Height', value: '55 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Material: Solid Teak and Teak veneer',
+      'Hardware: Antiqued bronze pulls'
     ],
     blueprintUrl: '/wood-nightstand/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -480,7 +501,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-wavy-bookshelf': {
     shopifyHandle: 'the-wavy-bookshelf',
     title: 'The Wavy Bookshelf',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'Defying rigid library aesthetics, the Wavy Bookshelf introduces an undulating, playful structure to display. Finished in matte cream, it acts as both storage and modern sculpture.',
     gallery: [
       { id: 'wav-1', url: '/wavy-bookshelf/main.png', alt: 'The Wavy Bookshelf main' },
       { id: 'wav-2', url: '/wavy-bookshelf/front.png', alt: 'The Wavy Bookshelf front' },
@@ -489,12 +510,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'wav-5', url: '/wavy-bookshelf/upclose.png', alt: 'The Wavy Bookshelf upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '110 cm' },
+      { label: 'Overall Depth', value: '35 cm' },
+      { label: 'Overall Height', value: '180 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Material: CNC-routed MDF',
+      'Finish: Matte Cream polyurethane lacquer'
     ],
     blueprintUrl: '/wavy-bookshelf/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -505,7 +527,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-glass-cabinet': {
     shopifyHandle: 'the-glass-cabinet',
     title: 'The Glass Cabinet',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'The Glass Cabinet frames your cherished objects in sharp, matte black iron and fluted glass. A sophisticated storage solution that reveals and conceals with cinematic grace.',
     gallery: [
       { id: 'gla-1', url: '/glass-cabinet/main.png', alt: 'The Glass Cabinet main' },
       { id: 'gla-2', url: '/glass-cabinet/front.png', alt: 'The Glass Cabinet front' },
@@ -514,12 +536,14 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'gla-5', url: '/glass-cabinet/upclose.png', alt: 'The Glass Cabinet upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '95 cm' },
+      { label: 'Overall Depth', value: '40 cm' },
+      { label: 'Overall Height', value: '165 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Powder-coated iron',
+      'Doors: Tempered fluted glass',
+      'Shelves: Solid oak inserts'
     ],
     blueprintUrl: '/glass-cabinet/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',
@@ -530,7 +554,7 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
   'the-boucle-chair': {
     shopifyHandle: 'the-boucle-chair',
     title: 'The Boucle Chair',
-    editorialDescription: 'A premium furniture piece crafted with attention to detail. Designed for modern living spaces to provide both comfort and aesthetic appeal.',
+    editorialDescription: 'A tactile delight. The Boucle Chair wraps a curvaceous, embracing form in rich ivory boucle, offering an incredibly soft and visually inviting accent piece for any contemporary corner.',
     gallery: [
       { id: 'bou-1', url: '/boucle-chair/main.png', alt: 'The Boucle Chair main' },
       { id: 'bou-2', url: '/boucle-chair/front.png', alt: 'The Boucle Chair front' },
@@ -539,12 +563,13 @@ const MOCK_SANITY_DATABASE: Record<string, SanityProductContent> = {
       { id: 'bou-5', url: '/boucle-chair/upclose.png', alt: 'The Boucle Chair upclose' }
     ],
     dimensions: [
-      { label: 'Overall Width', value: 'TBD' },
-      { label: 'Overall Depth', value: 'TBD' },
-      { label: 'Overall Height', value: 'TBD' }
+      { label: 'Overall Width', value: '82 cm' },
+      { label: 'Overall Depth', value: '85 cm' },
+      { label: 'Overall Height', value: '76 cm' }
     ],
     materials: [
-      'Premium Custom Materials'
+      'Frame: Curved plywood',
+      'Upholstery: High-pile Ivory Boucle fabric'
     ],
     blueprintUrl: '/boucle-chair/dimension.png',
     careGuide: 'Vacuum with soft brush attachment. Spot clean with mild soap and water.',

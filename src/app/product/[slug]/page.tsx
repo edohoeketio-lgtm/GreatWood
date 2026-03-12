@@ -6,26 +6,10 @@ import { PairsWellWith } from '@/components/pdp/PairsWellWith';
 import { TrustSignals } from '@/components/shared/TrustSignals';
 import { calculateDelivery } from '@/lib/utils/delivery';
 import { getSanityProduct } from '@/lib/cms/sanityMock';
-import { getShopifyProducts } from '@/lib/cms/shopifyMock';
+import { getShopifyProducts, getRelatedProducts } from '@/lib/cms/shopifyMock';
 import styles from './page.module.css';
 
-// MOCK_RELATED left here until Sanity handles recommendations
-const MOCK_RELATED = [
-  {
-    id: '2',
-    slug: 'veda-coffee-table',
-    title: 'Veda Coffee Table',
-    price: 450000,
-    imageUrl: 'https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: '5',
-    slug: 'luna-accent-chair',
-    title: 'Luna Accent Chair',
-    price: 320000,
-    imageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600'
-  }
-];
+
 
 // Ensure this component can accept Next.js Page Props
 interface PageProps {
@@ -76,6 +60,15 @@ export default async function ProductPage({ params }: PageProps) {
     })
   };
 
+  const relatedShopifyProducts = await getRelatedProducts(resolvedParams.slug);
+  const mappedRelated = relatedShopifyProducts.map(p => ({
+    id: p.id,
+    slug: p.handle,
+    title: p.title,
+    price: p.price,
+    imageUrl: p.featuredImageUrl,
+  }));
+
   return (
     <main className={styles.main}>
       <Container className={styles.topSection}>
@@ -109,7 +102,7 @@ export default async function ProductPage({ params }: PageProps) {
       {/* Cross-Sell */}
       <section className={styles.relatedSection}>
         <Container>
-          <PairsWellWith products={MOCK_RELATED} />
+          <PairsWellWith products={mappedRelated} />
         </Container>
       </section>
     </main>

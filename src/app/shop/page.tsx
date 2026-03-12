@@ -6,12 +6,24 @@ import { ProductTile } from '@/components/shared/ProductTile';
 import { getShopifyProducts } from '@/lib/cms/shopifyMock';
 import styles from './page.module.css';
 
-export default async function ShopIndex() {
+export default async function ShopIndex({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedParams = await searchParams;
   const products = await getShopifyProducts();
+  const categoryParam = typeof resolvedParams.category === 'string' ? resolvedParams.category : 'All';
+  
+  const filteredProducts = categoryParam === 'All' 
+    ? products 
+    : products.filter((p: any) => p.category === categoryParam);
+
+  const uniqueCategories = Array.from(new Set(products.map((p: any) => p.category))).filter(Boolean) as string[];
   
   // Map Shopify schema to the generic ProductTile prop shape that will eventually merge with Sanity
   // Swatches are mocked via hardcoded badge logic until Sanity merges happen
-  const mappedProducts = products.map(product => ({
+  const mappedProducts = filteredProducts.map(product => ({
     id: product.id,
     slug: product.handle,
     title: product.title,
@@ -45,7 +57,7 @@ export default async function ShopIndex() {
         </div>
 
         <FilterBar 
-          categories={['Sofas', 'Chairs', 'Tables', 'Storage', 'Beds']} 
+          categories={uniqueCategories} 
           totalResults={mappedProducts.length} 
         />
 

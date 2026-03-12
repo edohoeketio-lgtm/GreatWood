@@ -67,6 +67,39 @@
   line-height: 1.8;
 }
 
+.gallerySection {
+  margin-bottom: 8rem;
+}
+
+.masonryGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 500px;
+  gap: 1.5rem;
+}
+
+.galleryItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.galleryItemLarge {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.galleryImage {
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.galleryItem:hover .galleryImage {
+  transform: scale(1.02);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,6 +113,20 @@
   
   .heroOverlay {
     padding: 2rem;
+  }
+
+  .gallerySection {
+    margin-bottom: 5rem;
+  }
+
+  .masonryGallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+    gap: 1rem;
+  }
+
+  .galleryItemLarge {
+    grid-row: span 1;
   }
   
   .grid {

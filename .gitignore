@@ -45,3 +45,6 @@ next-env.d.ts
 
 # editor
 .vscode/
+
+# scratch/junk
+test-image.js

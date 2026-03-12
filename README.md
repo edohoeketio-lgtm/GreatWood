@@ -1,5 +1,7 @@
 # GreatWood
 
+![GreatWood Home](./public/spaces/lagos_executive.png)
+
 A premium furniture e-commerce platform built for the Nigerian market. Design-led, trust-first, with real product photography and an editorial approach to online retail.
 
 ## Tech Stack
@@ -51,6 +53,9 @@ src/
     └── utils/            # Delivery calculator, formatters
 ```
 
-## Screenshots
+## Interface
 
-*Coming soon*
+<p align="center">
+  <img src="./public/sapele-sofa/main.png" width="48%" />
+  <img src="./public/asaba-dresser/main.png" width="48%" />
+</p>

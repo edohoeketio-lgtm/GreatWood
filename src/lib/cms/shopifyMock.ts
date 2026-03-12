@@ -11,12 +11,14 @@ export interface ShopifyProduct {
   title: string;
   price: number;
   availableForSale: boolean;
+  category: string;
   featuredImageUrl: string;
   secondaryImageUrl?: string;
   variants: Array<{
     id: string;
     title: string;
     availableForSale: boolean;
+  category: string;
     price: number;
     imageUrl?: string;
     hoverImageUrl?: string;
@@ -29,6 +31,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-noka-sofa',
     title: 'The Noka Sofa',
     price: 1250000,
+    category: 'Sofas',
     availableForSale: true,
     featuredImageUrl: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=600',
     variants: [
@@ -41,6 +44,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-tapered-side-table',
     title: 'The Tapered Side Table',
     price: 380000,
+    category: 'Tables',
     availableForSale: true,
     featuredImageUrl: '/SIde table/main.png',
     secondaryImageUrl: '/SIde table/main.png',
@@ -53,6 +57,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-sola-chair',
     title: 'The Sola Chair',
     price: 320000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/yellow-chair/hover.jpg',
     secondaryImageUrl: '/yellow-chair/hover.jpg',
@@ -66,6 +71,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-eko-console',
     title: 'The Eko Console',
     price: 680000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/Console/console realistic.jpeg',
     secondaryImageUrl: '/Console/console realistic.jpeg',
@@ -73,33 +79,13 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
       { id: 'gid://shopify/ProductVariant/5', title: 'Walnut', availableForSale: true, price: 680000, imageUrl: '/Console/console realistic.jpeg', hoverImageUrl: '/Console/console realistic.jpeg' }
     ]
   },
-  {
-    id: 'gid://shopify/Product/5',
-    handle: 'luna-accent-chair',
-    title: 'Luna Accent Chair',
-    price: 320000,
-    availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600',
-    variants: [
-      { id: 'gid://shopify/ProductVariant/7', title: 'Default Title', availableForSale: true, price: 320000 }
-    ]
-  },
-  {
-    id: 'gid://shopify/Product/6',
-    handle: 'mara-bed-frame',
-    title: 'Mara Bed Frame (King)',
-    price: 1100000,
-    availableForSale: true,
-    featuredImageUrl: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=600',
-    variants: [
-      { id: 'gid://shopify/ProductVariant/8', title: 'King', availableForSale: true, price: 1100000 }
-    ]
-  },
+
   {
     id: 'gid://shopify/Product/sap-1',
     handle: 'the-sapele-sofa',
     title: 'The Sapele Sofa',
     price: 1850000,
+    category: 'Sofas',
     availableForSale: true,
     featuredImageUrl: '/sapele-sofa/main.png',
     secondaryImageUrl: '/sapele-sofa/front.png',
@@ -112,6 +98,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-ayo-lounge',
     title: 'The Ayo Lounge',
     price: 850000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/ayo-lounge/main.png',
     secondaryImageUrl: '/ayo-lounge/front.png',
@@ -124,6 +111,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-pebble-table',
     title: 'The Pebble Table',
     price: 450000,
+    category: 'Tables',
     availableForSale: true,
     featuredImageUrl: '/pebble-table/main.png',
     secondaryImageUrl: '/pebble-table/front.png',
@@ -136,6 +124,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-kano-stool',
     title: 'The Kano Stool',
     price: 250000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/kano-stool/main.png',
     secondaryImageUrl: '/kano-stool/front.png',
@@ -148,6 +137,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-asaba-dresser',
     title: 'The Asaba Dresser',
     price: 1200000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/asaba-dresser/main.png',
     secondaryImageUrl: '/asaba-dresser/front.png',
@@ -160,6 +150,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-lari-mirror',
     title: 'The Lari Mirror',
     price: 380000,
+    category: 'Decor',
     availableForSale: true,
     featuredImageUrl: '/lari-mirror/main.png',
     secondaryImageUrl: '/lari-mirror/front.png',
@@ -172,6 +163,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-ota-chair',
     title: 'The Ota Chair',
     price: 580000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/ota-chair/main.png',
     secondaryImageUrl: '/ota-chair/front.png',
@@ -184,6 +176,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-woven-lounge',
     title: 'The Woven Lounge',
     price: 720000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/woven-lounge/main.png',
     secondaryImageUrl: '/woven-lounge/front.png',
@@ -196,6 +189,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-bolster-daybed',
     title: 'The Bolster Daybed',
     price: 1450000,
+    category: 'Sofas',
     availableForSale: true,
     featuredImageUrl: '/bolster-daybed/main.png',
     secondaryImageUrl: '/bolster-daybed/front.png',
@@ -208,6 +202,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-cloud-sofa',
     title: 'The Cloud Sofa',
     price: 2150000,
+    category: 'Sofas',
     availableForSale: true,
     featuredImageUrl: '/cloud-sofa/main.png',
     secondaryImageUrl: '/cloud-sofa/front.png',
@@ -220,6 +215,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-vinyl-stand',
     title: 'The Vinyl Stand',
     price: 420000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/vinyl-stand/main.png',
     secondaryImageUrl: '/vinyl-stand/front.png',
@@ -232,6 +228,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-floral-chaise',
     title: 'The Floral Chaise',
     price: 950000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/floral-chaise/main.png',
     secondaryImageUrl: '/floral-chaise/front.png',
@@ -244,6 +241,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-wood-nightstand',
     title: 'The Wood Nightstand',
     price: 350000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/wood-nightstand/main.png',
     secondaryImageUrl: '/wood-nightstand/front.png',
@@ -256,6 +254,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-wavy-bookshelf',
     title: 'The Wavy Bookshelf',
     price: 880000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/wavy-bookshelf/main.png',
     secondaryImageUrl: '/wavy-bookshelf/front.png',
@@ -268,6 +267,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-glass-cabinet',
     title: 'The Glass Cabinet',
     price: 1650000,
+    category: 'Storage',
     availableForSale: true,
     featuredImageUrl: '/glass-cabinet/main.png',
     secondaryImageUrl: '/glass-cabinet/front.png',
@@ -280,6 +280,7 @@ const MOCK_SHOPIFY_CATALOG: ShopifyProduct[] = [
     handle: 'the-boucle-chair',
     title: 'The Boucle Chair',
     price: 650000,
+    category: 'Chairs',
     availableForSale: true,
     featuredImageUrl: '/boucle-chair/main.png',
     secondaryImageUrl: '/boucle-chair/front.png',
@@ -293,4 +294,34 @@ export async function getShopifyProducts(): Promise<ShopifyProduct[]> {
   // Simulate network
   await new Promise(resolve => setTimeout(resolve, 300));
   return MOCK_SHOPIFY_CATALOG;
+}
+
+export const RELATED_PRODUCTS_MAP: Record<string, string[]> = {
+  'the-sapele-sofa': ['the-pebble-table', 'the-lari-mirror', 'the-kano-stool'],
+  'the-ayo-lounge': ['the-wavy-bookshelf', 'the-woven-lounge', 'the-wood-nightstand'],
+  'the-pebble-table': ['the-sapele-sofa', 'the-bolster-daybed', 'the-ota-chair'],
+  'the-kano-stool': ['the-glass-cabinet', 'the-sapele-sofa', 'the-vinyl-stand'],
+  'the-asaba-dresser': ['the-lari-mirror', 'the-wood-nightstand', 'the-boucle-chair'],
+  'the-lari-mirror': ['the-asaba-dresser', 'the-sapele-sofa', 'the-glass-cabinet'],
+  'the-ota-chair': ['the-glass-cabinet', 'the-vinyl-stand', 'the-pebble-table'],
+  'the-woven-lounge': ['the-ayo-lounge', 'the-floral-chaise', 'the-boucle-chair'],
+  'the-bolster-daybed': ['the-pebble-table', 'the-cloud-sofa', 'the-wavy-bookshelf'],
+  'the-cloud-sofa': ['the-bolster-daybed', 'the-wavy-bookshelf', 'the-boucle-chair'],
+  'the-vinyl-stand': ['the-ota-chair', 'the-kano-stool', 'the-glass-cabinet'],
+  'the-floral-chaise': ['the-woven-lounge', 'the-wood-nightstand', 'the-asaba-dresser'],
+  'the-wood-nightstand': ['the-asaba-dresser', 'the-floral-chaise', 'the-ayo-lounge'],
+  'the-wavy-bookshelf': ['the-cloud-sofa', 'the-boucle-chair', 'the-ayo-lounge'],
+  'the-glass-cabinet': ['the-ota-chair', 'the-vinyl-stand', 'the-lari-mirror'],
+  'the-boucle-chair': ['the-cloud-sofa', 'the-wavy-bookshelf', 'the-woven-lounge'],
+  'the-noka-sofa': ['the-eko-console', 'the-sola-chair', 'the-pebble-table'],
+  'the-eko-console': ['the-noka-sofa', 'the-sola-chair', 'the-lari-mirror'],
+  'the-sola-chair': ['the-noka-sofa', 'the-eko-console', 'the-tapered-side-table'],
+  'the-tapered-side-table': ['the-sola-chair', 'the-boucle-chair', 'the-wavy-bookshelf'],
+};
+
+export async function getRelatedProducts(handle: string): Promise<ShopifyProduct[]> {
+  await new Promise(resolve => setTimeout(resolve, 150));
+  const relatedHandles = RELATED_PRODUCTS_MAP[handle] || ['the-sapele-sofa', 'the-pebble-table'];
+  
+  return MOCK_SHOPIFY_CATALOG.filter(p => relatedHandles.includes(p.handle));
 }

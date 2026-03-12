@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
 import { SlidersHorizontal, ChevronDown } from 'lucide-react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '../ui/Button';
 import styles from './FilterBar.module.css';
 
@@ -11,7 +11,19 @@ interface FilterBarProps {
 }
 
 export function FilterBar({ categories, totalResults }: FilterBarProps) {
-  const [activeCategory, setActiveCategory] = useState<string>('All');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const activeCategory = searchParams.get('category') || 'All';
+
+  const handleCategoryClick = (cat: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (cat === 'All') {
+      params.delete('category');
+    } else {
+      params.set('category', cat);
+    }
+    router.push(`?${params.toString()}`, { scroll: false });
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -19,7 +31,7 @@ export function FilterBar({ categories, totalResults }: FilterBarProps) {
         <div className={styles.categories}>
           <button
             className={`${styles.categoryBtn} ${activeCategory === 'All' ? styles.active : ''}`}
-            onClick={() => setActiveCategory('All')}
+            onClick={() => handleCategoryClick('All')}
           >
             All Collections
           </button>
@@ -27,7 +39,7 @@ export function FilterBar({ categories, totalResults }: FilterBarProps) {
             <button
               key={cat}
               className={`${styles.categoryBtn} ${activeCategory === cat ? styles.active : ''}`}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => handleCategoryClick(cat)}
             >
               {cat}
             </button>
