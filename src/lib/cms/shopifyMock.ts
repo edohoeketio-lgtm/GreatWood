@@ -18,7 +18,6 @@ export interface ShopifyProduct {
     id: string;
     title: string;
     availableForSale: boolean;
-  category: string;
     price: number;
     imageUrl?: string;
     hoverImageUrl?: string;
