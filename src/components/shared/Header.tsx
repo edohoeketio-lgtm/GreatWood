@@ -18,11 +18,6 @@ export function Header() {
 
   const cartItemCount = items.reduce((total: number, item: any) => total + item.quantity, 0);
 
-  // Hide global header on secure checkout pages
-  if (pathname.startsWith('/checkout')) {
-    return null;
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -30,6 +25,11 @@ export function Header() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Hide global header on secure checkout pages
+  if (pathname.startsWith('/checkout')) {
+    return null;
+  }
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>

@@ -93,6 +93,23 @@ export default async function SpaceDetailPage({ params }: PageProps) {
           <p className={styles.curatorText}>{space.description}</p>
         </section>
 
+        {/* Space Gallery */}
+        {space.gallery && space.gallery.length > 0 && (
+          <section className={styles.gallery}>
+            {space.gallery.map((img) => (
+              <div key={img.id} className={styles.galleryImageWrapper}>
+                <Image
+                  src={img.url}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className={styles.galleryImage}
+                />
+              </div>
+            ))}
+          </section>
+        )}
+
         {/* Room Inventory */}
         <section className={styles.inventory}>
           <SectionHeader 

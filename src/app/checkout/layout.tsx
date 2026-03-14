@@ -4,7 +4,7 @@ import { Lock } from 'lucide-react';
 import styles from './layout.module.css';
 
 export const metadata: Metadata = {
-  title: 'Secure Checkout | Architect Furniture',
+  title: 'Secure Checkout | GreatWood Furniture',
   description: 'Complete your purchase securely.',
 };
 
@@ -24,7 +24,7 @@ export default function CheckoutLayout({
             ← Return to Shop
           </Link>
           <div className={styles.logoWrapper}>
-            <Link href="/" className={styles.logo}>Architect</Link>
+            <Link href="/" className={styles.logo}>GreatWood</Link>
           </div>
           <div className={styles.secureBadge}>
             <Lock size={14} strokeWidth={1.5} />
@@ -38,7 +38,7 @@ export default function CheckoutLayout({
       </main>
 
       <footer className={styles.footer}>
-        <p>© {new Date().getFullYear()} Architect Furniture. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} GreatWood Furniture. All rights reserved.</p>
         <div className={styles.footerLinks}>
           <Link href="/terms">Terms</Link>
           <Link href="/privacy">Privacy</Link>

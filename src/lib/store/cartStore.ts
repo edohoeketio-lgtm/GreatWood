@@ -24,6 +24,7 @@ export interface CartState {
   addLineItem: (item: Omit<CartItem, 'id'>) => Promise<void>;
   removeLineItem: (id: string) => Promise<void>;
   updateQuantity: (id: string, quantity: number) => Promise<void>;
+  clearCart: () => void;
   setDeliveryZone: (zone: DeliveryZone) => void;
   initializeCart: () => Promise<void>;
   getCheckoutUrl: () => string;
@@ -79,6 +80,10 @@ export const useCartStore = create<CartState>()(
           ),
           status: 'idle'
         }));
+      },
+
+      clearCart: () => {
+        set({ items: [], status: 'idle' });
       },
 
       setDeliveryZone: (zone) => set({ deliveryZone: zone }),
